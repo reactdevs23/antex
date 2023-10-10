@@ -11,13 +11,15 @@ const HeroSection = () => {
           <p className={styles.subHeading}>WELCOME TO </p>
           <h2 className={styles.heading}>
             HINOX <br />
-            ECOSYSTEM
+            STAKING
           </h2>
 
           <p className={styles.text}>
-            Hinox is an innovative blockchain ecosystem delivering streamlined
+            {/* Hinox is an innovative blockchain ecosystem delivering streamlined
             solutions and agile services aimed at seamless onboarding of both
-            new and existing projects; helping them to defy gravity.
+            new and existing projects; helping them to defy gravity. */}
+            Stake Your $BST to Join the best IDOs, Vote on Incubation, and
+            Empower Governance!
           </p>
 
           <div className={styles.buttonContainer}>

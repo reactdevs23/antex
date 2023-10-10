@@ -4,8 +4,8 @@ import styles from "./SupportedChain.module.css";
 import {
   arbitrum,
   avalanche,
-  binance,
-  ethereum,
+  binanceIcon,
+  ethereumLogo,
   optimism,
   polygone,
 } from "../../../images";
@@ -13,9 +13,9 @@ import {
 const SupportedChain = () => {
   const supportedChain = [
     { logo: arbitrum, name: "Arbitrum" },
-    { logo: binance, name: "Binance " },
+    { logo: binanceIcon, name: "Binance " },
     { logo: avalanche, name: "Avalanche" },
-    { logo: ethereum, name: "Ethereum" },
+    { logo: ethereumLogo, name: "Ethereum" },
     { logo: optimism, name: "Optimism" },
     { logo: polygone, name: "Polygone" },
     { logo: optimism, name: "Optimism" },

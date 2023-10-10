@@ -1,0 +1,129 @@
+.wrapper {
+  padding: 50px 0;
+}
+.filteration {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .filteration {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.filteration .left {
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  .filteration .left {
+    flex-direction: column;
+  }
+}
+
+.filteration .left .searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  max-width: 280px;
+  width: 100%;
+}
+
+.filteration .left .searchContainer input {
+  border-radius: 20px;
+  border: 1px solid rgba(229, 243, 255, 0.16);
+  width: 100%;
+  background-color: transparent;
+  padding: 15px 0;
+  padding-left: 45px;
+  padding-right: 10px;
+  outline: none;
+
+  color: #fff;
+}
+
+.filteration .left .searchContainer img {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+}
+
+.filteration .right h4 {
+  color: rgba(229, 243, 255, 0.8);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.filteration .right .networks {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.projectInfoWrap {
+  margin-top: 58px;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .actions {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .actions {
+    flex-direction: column;
+  }
+}
+
+.rowsContainer {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rowsContainer .line {
+  width: 1px;
+  height: 26px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.rowsContainer .rowSelector {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  width: 79px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
