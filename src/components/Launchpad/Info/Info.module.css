@@ -1,0 +1,31 @@
+.wrapper {
+  background: #242b33;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+}
+
+.tab {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.activeTab {
+  color: #23ae6a;
+  border-bottom: 1px solid #23ae6a;
+}

@@ -1,0 +1,35 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-right: 1px solid #353f49;
+  padding: 12px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #353f49;
+}
+
+.heading {
+  color: #fff;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150.4%; /* 24.064px */
+  padding-bottom: 50px;
+}
+
+.item {
+  color: #fff;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150.4%;
+  cursor: pointer;
+}
+.activeItem {
+  color: #1ced86;
+}

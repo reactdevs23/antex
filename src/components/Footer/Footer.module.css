@@ -1,0 +1,137 @@
+.footer {
+  background: #242b33;
+  padding: 70px 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 350px repeat(4, 1fr);
+  gap: 18px;
+}
+
+.logoAndInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logoTextContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.name {
+  color: #e5f3ff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.tagline {
+  color: #e5f3ff;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+}
+.info {
+  color: rgba(229, 243, 255, 0.5);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 200%;
+  text-transform: capitalize;
+  max-width: 261px;
+  width: 100%;
+}
+.socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.socialIcon {
+  color: rgba(229, 243, 254, 1);
+  font-size: 18px;
+  cursor: pointer;
+}
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.heading {
+  color: rgba(229, 243, 255, 0.8);
+  font-feature-settings: "ss06" on;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0.08px;
+  padding-bottom: 6px;
+}
+.item {
+  color: rgba(229, 243, 255, 0.6);
+  font-feature-settings: "ss06" on;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%; /* 20.3px */
+}
+
+.copyRight {
+  color: #e5f3fe;
+
+  font-feature-settings: "ss06" on;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 20.3px */
+  padding-top: 70px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .wrapper {
+    grid-template-columns: auto repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: auto repeat(3, 1fr);
+    gap: 50px 35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .logoAndInfo {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

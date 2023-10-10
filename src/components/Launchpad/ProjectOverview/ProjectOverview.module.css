@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.highlights {
+  padding-left: 20px;
+  border-bottom: 1px solid #697e95;
+  padding-bottom: 25px;
+  padding-top: 400px;
+}
+.heading {
+  color: #fff;
+  font-family: Avenir Next;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150.4%; /* 27.072px */
+  padding-bottom: 18px;
+}
+.text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150.4%; /* 27.072px */
+}

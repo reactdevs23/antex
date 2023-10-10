@@ -1,0 +1,112 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.achivement {
+  border-radius: 15px;
+  border: 1px solid rgba(245, 251, 242, 0.44);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03) -30.29%,
+      rgba(255, 255, 255, 0) 144.92%
+    );
+  backdrop-filter: blur(25px);
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+  position: relative;
+  padding: 10px 60px;
+}
+
+.valueAndInfo {
+  margin: 0 auto;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  z-index: 1;
+  margin-right: auto;
+}
+.valueAndInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.valueContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.value {
+  background: linear-gradient(
+    90deg,
+    #1ced86 -12.64%,
+    rgba(82, 240, 250, 0.5) 129.13%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.currency {
+  color: rgba(229, 243, 255, 0.9);
+  font-size: 16px;
+  font-family: Inter;
+}
+.cross {
+  font-size: 20px;
+}
+.info {
+  color: #ddffef;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media only screen and (max-width: 1080px) {
+  .achivement {
+    padding: 10px 55px;
+  }
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+  .value {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

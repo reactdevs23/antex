@@ -1,0 +1,134 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+  border-radius: 22px;
+
+  background: linear-gradient(
+    181deg,
+    #144d39 2.04%,
+    rgba(29, 254, 142, 0.8) 191.65%
+  );
+  padding: 10px 0;
+  padding-left: 34px;
+  padding-right: 10px;
+}
+.infoContainer {
+  padding: 10px 0;
+}
+
+.heading {
+  color: #e5f3ff;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  position: relative;
+  max-width: 490px;
+  padding-right: 50px;
+}
+.hinox {
+  position: relative;
+}
+.hinox::before {
+  content: url(../../../images/landingPage/line.png);
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 100%;
+}
+.arrow {
+  width: 40px;
+  position: absolute;
+  right: 10px;
+  bottom: 22px;
+  z-index: 1;
+  cursor: pointer;
+}
+.info {
+  color: #242b33;
+
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+.applyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(36, 43, 51, 0.8);
+}
+.applyButton {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  text-transform: capitalize;
+  border-radius: 41px;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  padding: 7px 30px;
+}
+.title {
+  color: rgba(229, 243, 255, 0.9);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 158.333%;
+  text-transform: uppercase;
+}
+.highlight {
+  color: #0fc76c;
+
+  font-family: Inter;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+.text {
+  color: #e5f3ff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 142.857%;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+  .infoContainer {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heading {
+    font-size: 27px;
+  }
+  .arrow {
+    width: 30px;
+  }
+  .applyButton {
+    font-size: 16px;
+  }
+}

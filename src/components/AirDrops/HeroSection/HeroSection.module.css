@@ -1,0 +1,107 @@
+.heroSection {
+  background: url(../../../images/airdrops/heroImg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 180px;
+  padding-bottom: 24px;
+}
+.heading {
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 128.125%;
+  text-transform: uppercase;
+  color: #ddffef;
+}
+.subHeading {
+  color: #ddffef;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128.125%;
+  text-transform: uppercase;
+}
+.text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 187.5%;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0;
+}
+.button {
+  color: #18332e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 168.75%;
+  text-transform: capitalize;
+  border-radius: 15px;
+  padding: 12px 25px;
+  min-width: 200px;
+}
+.launchPadButton {
+  background: #1dfe8e;
+}
+.buyButton {
+  background: rgba(221, 255, 239, 0.8);
+}
+.tradingsOnTitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.tradings {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+@media only screen and (max-width: 991px) {
+  .heading {
+    font-size: 53px;
+  }
+  .subHeading {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heading {
+    font-size: 48px;
+  }
+  .subHeading {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .buttonContainer {
+    padding: 8px 0;
+  }
+  .button {
+    min-width: auto;
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .tradingsOnTitle {
+    font-size: 16px;
+  }
+}
