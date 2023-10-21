@@ -1,0 +1,76 @@
+.wrapper {
+  max-width: 584px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 20px;
+}
+
+.labelContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 20px;
+}
+
+.label {
+  color: #fff;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.input {
+  color: #1ced86;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Avenir Next;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 5.925px;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.12);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 13px 12px;
+}
+
+.confirmButton {
+  color: #18332e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 168.75%;
+  text-transform: capitalize;
+  border-radius: 10px;
+  background: #1ced86;
+  width: 100%;
+  padding: 9px 18px;
+}
+
+@media only screen and (max-width: 520px) {
+  .labelContainer img {
+    width: 24px;
+  }
+  .label {
+    font-size: 16px;
+  }
+  .input {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .confirmButton {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,114 @@
+.tableContainer {
+  margin-top: 16px;
+  overflow-x: auto;
+}
+
+.tableContainer table {
+  min-width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tableContainer th {
+  color: rgba(229, 243, 255, 0.4);
+  font-feature-settings: "ss03" on;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.14px;
+  padding: 12px 15px;
+  white-space: nowrap;
+  text-align: center;
+}
+.claimAllButton {
+  color: #0f1210;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120.714%;
+  border-radius: 10px;
+  background: #97d8dc;
+  padding: 10px 24px;
+}
+.arrow {
+  font-size: 28px;
+  color: rgba(28, 237, 134, 1);
+  cursor: pointer;
+}
+
+.tableContainer td {
+  color: #bfd9f5;
+  font-family: Avenir Next;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  padding: 12px 15px;
+  white-space: nowrap;
+  text-align: center;
+}
+.bold {
+  color: #bfd9f5;
+
+  font-weight: 600;
+}
+.button {
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.714%;
+  border-radius: 5px;
+  padding: 4px 22px;
+  min-width: 100px;
+}
+.claimedButton {
+  color: rgba(225, 225, 225, 0.5);
+  background: linear-gradient(0deg, #2f393c 0%, #2f393c 100%), #8ba8aa;
+}
+.unClaimedButton {
+  color: #0f381d;
+  background: #1ced86;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+.unClaimedButton:hover {
+  opacity: 1;
+}
+/* Firefox */
+.tableContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #1ced86 rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+/* Chrome, Edge, and Safari */
+.tableContainer::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #1ced86;
+  border-radius: 100vh;
+  border: none;
+  border-radius: 5px;
+}

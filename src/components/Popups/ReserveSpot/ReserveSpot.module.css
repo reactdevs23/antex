@@ -1,0 +1,349 @@
+.reserveSpot {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  background: #292d32;
+  box-shadow: 0px 4px 44px 0px #292d32;
+  padding: 18px 14px;
+  width: calc(100vw - 32px);
+  max-width: 478px;
+  z-index: 8;
+  max-height: calc(100vh - 80px);
+  height: auto;
+  overflow-y: auto;
+}
+.closeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(248, 248, 248, 1);
+  cursor: pointer;
+  margin-left: auto;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.close {
+  color: rgba(248, 248, 248, 1);
+  font-size: 20px;
+}
+.modalsSection {
+  padding: 50px 0;
+}
+
+.reserveSpot .main {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media only screen and (max-width: 520px) {
+  .reserveSpot .main {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.title {
+  color: rgba(214, 237, 255, 0.8);
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 162.5%;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(36, 43, 51, 0.1);
+  backdrop-filter: blur(150px);
+  z-index: 7;
+}
+
+.reserveSpot .main .enabledBoxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.green {
+  color: #1ced86;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+}
+
+.reserveSpotDescription {
+  max-width: 310px;
+  margin: 28px auto 13px;
+  position: relative;
+}
+
+.reserveSpotDescription img {
+  position: absolute;
+  left: -20px;
+  top: 5px;
+}
+@media only screen and (max-width: 520px) {
+  .reserveSpotDescription {
+    padding-left: 20px;
+  }
+  .reserveSpotDescription .green {
+    font-size: 14px;
+  }
+  .reserveSpotDescription img {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+  }
+}
+.box {
+  border-radius: 10px;
+  background: #2a3035;
+  padding: 6px 14px;
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+}
+
+.amounts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d6edff;
+  font-size: 11px;
+  opacity: 0.5;
+  margin-top: 6px;
+}
+
+.box .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 8px;
+}
+
+.box .amount {
+  color: rgba(214, 237, 255, 0.8);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.box .max {
+  color: #f6fbff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box .numbers {
+  border-radius: 6px;
+  background: rgba(214, 237, 255, 0.12);
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box .num {
+  color: #d6edff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.box .unit {
+  color: #d6edff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.box .additionalInfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: rgba(214, 237, 255, 0.5);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 8px;
+}
+
+.box .additionalInfo .green {
+  color: rgba(28, 237, 134, 0.6);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.confirm {
+  border-radius: 10px;
+  background: #1ced86;
+  padding: 10px 18px;
+  width: 100%;
+  color: #18332e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 185.714%;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 520px) {
+  .confirm {
+    padding: 8px 18px;
+  }
+}
+.row1 {
+  padding: 16px;
+}
+
+.percent {
+  border-radius: 20px;
+  background: #e8ffce;
+  width: 55px;
+  height: 52px;
+  color: #0f381d;
+  text-align: center;
+  font-family: ZCOOL XiaoWei;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.percent h3 {
+  color: #0f381d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+  text-transform: capitalize;
+}
+
+.tablesModal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  box-shadow: 0px 4px 44px 0px #292d32;
+  width: calc(100vw - 32px);
+  max-width: 1116px;
+  z-index: 7;
+  height: calc(100vh - 80px);
+  overflow: auto;
+  background: #242b33;
+}
+
+.tablesModal .row1 {
+  border-radius: 10px 10px 0px 0px;
+  background: linear-gradient(0deg, #242b33 0%, #242b33 100%), #242b33;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #000;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .tablesModal .row1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.tablesModal .row1 .stats,
+.otherRows .row .stats {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.otherRows .row .stats {
+  border-radius: 10px;
+  border: 1px solid rgba(232, 255, 206, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+  .tablesModal .row1 .stats,
+  .otherRows .row .stats {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+.tablesModal .row1 .stats .item,
+.otherRows .row .stats .item {
+  width: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 70px;
+  color: rgba(228, 245, 255, 0.8);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tablesModal .row1 .stats h6 {
+  color: #e4f5ff;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}

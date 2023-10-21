@@ -5,8 +5,9 @@
 
   justify-content: center;
   flex-direction: column;
-  padding: 25px 0;
+  padding-bottom: 25px;
   overflow-x: hidden;
+  padding-top: 20px;
 }
 .title {
   color: #ddffef;
@@ -16,7 +17,7 @@
   font-weight: 300;
   line-height: 175%;
   text-transform: capitalize;
-  padding-bottom: 24px;
+  padding-bottom: 0px;
 }
 .marquee {
   display: flex;

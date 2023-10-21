@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
-import { bybt, kuCoin, uniswap, wallet } from "../../../images";
+import { wallet } from "../../../images";
+import { useDataContext } from "../../Context";
+import TrendingOn from "../../common/TrendingOn/TrendingOn";
 
 const HeroSection = () => {
-  const trendingOn = [uniswap, kuCoin, bybt, bybt];
+  const { setShowBuyBstModal } = useDataContext();
   return (
     <section>
       <div className={styles.heroSection}>
@@ -11,15 +13,13 @@ const HeroSection = () => {
           <p className={styles.subHeading}>WELCOME TO </p>
           <h2 className={styles.heading}>
             HINOX <br />
-            STAKING
+            HINOX ECOSYSTEM
           </h2>
 
           <p className={styles.text}>
-            {/* Hinox is an innovative blockchain ecosystem delivering streamlined
+            Hinox is an innovative blockchain ecosystem delivering streamlined
             solutions and agile services aimed at seamless onboarding of both
-            new and existing projects; helping them to defy gravity. */}
-            Stake Your $BST to Join the best IDOs, Vote on Incubation, and
-            Empower Governance!
+            new and existing projects; helping them to defy gravity.
           </p>
 
           <div className={styles.buttonContainer}>
@@ -28,20 +28,15 @@ const HeroSection = () => {
             >
               Launchpad
             </button>{" "}
-            <button className={[styles.button, styles.buyButton].join(" ")}>
+            <button
+              className={[styles.button, styles.buyButton].join(" ")}
+              onClick={() => setShowBuyBstModal(true)}
+            >
               Buy $BST
             </button>
           </div>
           <div className={styles.tradingAndFeature}>
-            <div className={styles.tradingsOn}>
-              <h4 className={styles.tradingsOnTitle}>Trading on:</h4>
-
-              <div className={styles.tradings}>
-                {trendingOn.map((el, i) => (
-                  <img src={el} alt="#" key={i} className={styles.trading} />
-                ))}
-              </div>
-            </div>
+            <TrendingOn />
             <div className={styles.feature}>
               <div className={styles.valueAndInfo}>
                 {" "}

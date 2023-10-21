@@ -1,5 +1,5 @@
 .heroSection {
-  background: url(../../../images/airdrops/heroImg.png);
+  background: url(../../../images/landingPage/heroImg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-top: 70px;
-  padding-bottom: 24px;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .subHeading {
   color: rgba(28, 237, 134, 0.5);
@@ -72,19 +72,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.tradingsOnTitle {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.tradings {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
+
 .feature {
   border-radius: 15px;
   border: 1px solid rgba(245, 251, 242, 0.44);
@@ -154,7 +142,8 @@
 }
 @media only screen and (max-width: 520px) {
   .wrapper {
-    padding-top: 50px;
+    padding-top: 144px;
+    padding-bottom: 24px;
   }
   .heading {
     font-size: 40px;
@@ -172,8 +161,5 @@
     min-width: auto;
     padding: 10px 25px;
     font-size: 14px;
-  }
-  .tradingsOnTitle {
-    font-size: 16px;
   }
 }

@@ -1,0 +1,66 @@
+.gridTableContainer {
+  overflow-x: auto;
+  position: relative;
+}
+
+.gridTable {
+  display: grid;
+  grid-template-columns: repeat(5, auto); /* Define the number of columns */
+  gap: 0; /* Adjust as needed */
+
+  position: relative;
+  max-height: calc(100vh);
+  height: auto;
+  overflow-y: auto;
+}
+.gridHeaderWrapper {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.gridHeader {
+  font-weight: bold;
+  text-align: left;
+  padding: 12px 15px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    ),
+    #242b33;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.myTable {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.gridItem {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  background: #191e24;
+  padding: 12px 15px;
+  white-space: nowrap;
+  border-top: 1px solid rgba(228, 245, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.positionContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.position {
+  border-radius: 20px;
+  background: #2d4356;
+  min-width: 40px;
+  padding: 4px;
+  text-align: center;
+}

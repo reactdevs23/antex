@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import styles from "./Faq.module.css";
-import SingleFaq from "./SingleFaq";
 
 const Faq = () => {
+  const [showAnswer, setShowAnser] = useState(null);
   const faqArray = [
     {
       question: "Why do I need to Stake my BST token?",
@@ -59,7 +59,27 @@ const Faq = () => {
       <h3 className={styles.title}> FAQs</h3>
       <div className={styles.faqWrapper}>
         {faqArray.map((items, index) => (
-          <SingleFaq {...items} key={index} />
+          <div
+            key={index}
+            className={styles.faqContainer}
+            onClick={() => setShowAnser(index)}
+          >
+            <div className={styles.questionWrapper}>
+              <p className={styles.question}>{items.question}</p>
+              {showAnswer === index ? (
+                <FaChevronUp className={styles.icon} />
+              ) : (
+                <FaChevronDown className={styles.icon} />
+              )}
+            </div>
+            {showAnswer === index && (
+              <div className={styles.answerContainer}>
+                <p className={`${styles.answer} ${styles.question}`}>
+                  {items.answer}
+                </p>
+              </div>
+            )}
+          </div>
         ))}
       </div>
     </section>

@@ -1,0 +1,108 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(36, 43, 51, 0.6) 0%,
+      rgba(36, 43, 51, 0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(12, 175, 96, 0.3) 0%, rgba(22, 29, 38, 0) 100%);
+  padding: 40px 18px;
+  position: relative;
+  z-index: 1;
+}
+.title {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186.667%;
+  text-transform: capitalize;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 346px;
+  gap: 30px;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  height: 100%;
+}
+.info {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 280%;
+  text-transform: capitalize;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 10px;
+}
+.button {
+  color: #18332e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 192.857%;
+  text-transform: capitalize;
+  border-radius: 15px;
+  padding: 10px 35px;
+  display: inline-block;
+}
+.docs {
+  background: rgba(228, 245, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 192.857%;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+.readBlogs {
+  background: #1dfe8e;
+}
+@media only screen and (max-width: 991px) {
+  .title {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .infoContainer {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .buttonContainer {
+    justify-content: center;
+  }
+  .button {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+}

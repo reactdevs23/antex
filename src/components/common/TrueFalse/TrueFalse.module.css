@@ -54,3 +54,10 @@
   background-color: #56ea9d;
   color: #1a623c;
 }
+
+@media only screen and (max-width: 640px) {
+  .cardTitleleft {
+    flex-grow: 1;
+    width: 100%;
+  }
+}

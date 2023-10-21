@@ -4,14 +4,15 @@ import LoadMore from "../../../components/common/LoadMore/LoadMore";
 import Pagination from "../../../components/common/Pagination/Pagination";
 import classes from "./Projects.module.css";
 import {
+  Abitrum,
+  Avalanch,
+  Optimism,
+  Polygon,
   arrowDropdown2,
   binance,
+  cryptoProject,
   ethereum,
-  fifthNetwork,
-  firstNetwork,
-  fourthNetwork,
   magnifier,
-  sixthNetwork,
 } from "../../../images";
 import clsx from "clsx";
 import Dropdown from "../../../components/common/Dropdown/Dropdown";
@@ -20,101 +21,1170 @@ import SingleProject from "./SingleProject/SingleProject";
 
 const rawProjects = [
   {
+    img: cryptoProject,
     name: "CRYPTO PROJECT",
     remainingTokens: "190,000,000 BNB",
     tokenPrice: "1.00",
-    claimNetworkIcon: binance,
-    claimNetworkName: "Binance",
+    networkIcon: Abitrum,
+    networkName: "Arbitrum",
+    avialableTokenUsdPrice: "$12,000",
     claimable: true,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
   },
   {
+    img: cryptoProject,
     name: "SECOND PROJECT",
     remainingTokens: "190,000,000 BNB",
     tokenPrice: "1.00",
-    claimNetworkIcon: binance,
-    claimNetworkName: "First",
+    networkIcon: ethereum,
+    networkName: "Ethereum",
+    avialableTokenUsdPrice: "$12,000",
     claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
   },
   {
+    img: cryptoProject,
     name: "THIRD PROJECT",
     remainingTokens: "190,000,000 BNB",
     tokenPrice: "1.00",
-    claimNetworkIcon: binance,
-    claimNetworkName: "Ethereum",
+    networkIcon: binance,
+    networkName: "Binance",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
     claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
   },
   {
+    img: cryptoProject,
     name: "FOURTH PROJECT",
     remainingTokens: "190,000,000 BNB",
     tokenPrice: "1.00",
-    claimNetworkIcon: binance,
-    claimNetworkName: "Fourth",
+    networkIcon: Avalanch,
+    networkName: "Avalanch",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
     claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
   },
   {
+    img: cryptoProject,
     name: "FIFTH PROJECT",
     remainingTokens: "190,000,000 BNB",
     tokenPrice: "1.00",
-    claimNetworkIcon: binance,
-    claimNetworkName: "Fifth",
+    networkIcon: Polygon,
+    networkName: "Polygon",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
     claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
   },
   {
+    img: cryptoProject,
     name: "SIXTH PROJECT",
     remainingTokens: "190,000,000 BNB",
     tokenPrice: "1.00",
-    claimNetworkIcon: binance,
-    claimNetworkName: "Sixth",
+    networkIcon: Optimism,
+    networkName: "Optimism",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
     claimable: true,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
+  },
+  {
+    img: cryptoProject,
+    name: "CRYPTO PROJECT",
+    remainingTokens: "190,000,000 BNB",
+    tokenPrice: "1.00",
+    networkIcon: Abitrum,
+    networkName: "Arbitrum",
+    avialableTokenUsdPrice: "$12,000",
+    claimable: true,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
+  },
+  {
+    img: cryptoProject,
+    name: "SECOND PROJECT",
+    remainingTokens: "190,000,000 BNB",
+    tokenPrice: "1.00",
+    networkIcon: ethereum,
+    networkName: "Ethereum",
+    avialableTokenUsdPrice: "$12,000",
+    claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
+  },
+  {
+    img: cryptoProject,
+    name: "THIRD PROJECT",
+    remainingTokens: "190,000,000 BNB",
+    tokenPrice: "1.00",
+    networkIcon: binance,
+    networkName: "Binance",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
+    claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
+  },
+  {
+    img: cryptoProject,
+    name: "FOURTH PROJECT",
+    remainingTokens: "190,000,000 BNB",
+    tokenPrice: "1.00",
+    networkIcon: Avalanch,
+    networkName: "Avalanch",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
+    claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
+  },
+  {
+    img: cryptoProject,
+    name: "FIFTH PROJECT",
+    remainingTokens: "190,000,000 BNB",
+    tokenPrice: "1.00",
+    networkIcon: Polygon,
+    networkName: "Polygon",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
+    claimable: false,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
+  },
+  {
+    img: cryptoProject,
+    name: "SIXTH PROJECT",
+    remainingTokens: "190,000,000 BNB",
+    tokenPrice: "1.00",
+    networkIcon: Optimism,
+    networkName: "Optimism",
+    avialableTokenUsdPrice: "$12,000",
+    lockedokenUsdPirce: "$12,000",
+    claimable: true,
+    vestingCounts: "02 of 06 Months",
+    claimInfo: [
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: true,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+      {
+        tokenUnlock: "20%",
+        amountUnlock: {
+          bnb: "4590 BNB ",
+          usd: "10,000",
+        },
+        unlockAt: "20 Jan,2023,11:12am",
+
+        claimed: false,
+      },
+    ],
   },
 ];
 
 const allNetworks = [
-  { icon: firstNetwork, name: "First" },
-  { icon: ethereum, name: "Ethereum" },
-  { icon: binance, name: "Binance" },
-  { icon: fourthNetwork, name: "Fourth" },
-  { icon: fifthNetwork, name: "Fifth" },
-  { icon: sixthNetwork, name: "Sixth" },
+  { networkIcon: Abitrum, networkName: "Arbitrum" },
+  { networkIcon: ethereum, networkName: "Ethereum" },
+  { networkIcon: binance, networkName: "Binance" },
+  { networkIcon: Avalanch, networkName: "Avalanch" },
+  { networkIcon: Polygon, networkName: "Polygon" },
+  { networkIcon: Optimism, networkName: "Optimism" },
 ];
 
 // 10 minutes timer
 
 const Projects = () => {
   const [selectedFilter, setSelectedFilter] = useState("All Vesting");
-  const [formState, setFormState] = useState({
-    search: "",
-    network: "",
-  });
+  const [searchValue, setSearchValue] = useState("");
   const [selectedNetwork, setSelectedNetwork] = useState("");
-  const [filteredProjects, setFilteredProjects] = useState([]);
 
-  const [itemsPerPage, setItemsPerPage] = useState(5);
+  // Filter function to apply all filters
+  const filterProjects = (project) => {
+    const filterByName = project.name
+      .toLowerCase()
+      .includes(searchValue.toLowerCase());
+    const filterByNetwork =
+      !selectedNetwork ||
+      project.networkName.toLowerCase() === selectedNetwork.toLowerCase();
+    const filterByClaimable =
+      selectedFilter === "Claimable Vesting" ? project.claimable : true;
+
+    return filterByName && filterByNetwork && filterByClaimable;
+  };
+
+  const [itemsPerPage, setItemsPerPage] = useState(6);
   const [currentPage, setCurrentPage] = useState(1);
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * itemsPerPage;
     const lastPageIndex = firstPageIndex + itemsPerPage;
-    return filteredProjects.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage, itemsPerPage, filteredProjects]);
-  useEffect(() => {
-    let filtered = rawProjects.filter((el) => {
-      if (!el.name.toLowerCase().includes(formState.search.toLowerCase()))
-        return false;
-
-      if (selectedFilter !== "All Vesting") {
-        if (selectedFilter === "Claimable Vesting" && !el.claimable)
-          return false;
-      }
-
-      if (selectedNetwork) {
-        if (el.claimNetworkName !== selectedNetwork) return false;
-      }
-
-      return true;
-    });
-
-    setFilteredProjects(filtered);
-  }, [formState, selectedFilter, selectedNetwork]);
+    return rawProjects
+      .filter(filterProjects)
+      .slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, itemsPerPage, searchValue, selectedFilter, selectedNetwork]);
 
   return (
     <div className={[classes.wrapper, "mainWrapper"].join(" ")}>
@@ -138,10 +1208,8 @@ const Projects = () => {
             <input
               type="text"
               placeholder="Search projects"
-              value={formState.search}
-              onChange={(e) =>
-                setFormState((prev) => ({ ...prev, search: e.target.value }))
-              }
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
             />
           </div>
         </div>
@@ -151,18 +1219,21 @@ const Projects = () => {
           <div className={classes.networks}>
             {allNetworks.map((el, idx) => {
               return (
-                <div
-                  key={"network-" + idx}
-                  className={clsx(
-                    classes.networkContainer,
-                    selectedNetwork === el.name && classes.active
-                  )}
-                  onClick={() => {
-                    if (selectedNetwork === el.name) setSelectedNetwork("");
-                    else setSelectedNetwork(el.name);
-                  }}
-                >
-                  <img src={el.icon} alt={el.name} />
+                <div className={classes.networkWrapper}>
+                  <div
+                    key={"network-" + idx}
+                    className={clsx(
+                      classes.networkContainer,
+                      selectedNetwork.toLowerCase() ===
+                        el.networkName.toLowerCase() && classes.active
+                    )}
+                    onClick={() => {
+                      setSelectedNetwork(el.networkName);
+                    }}
+                  >
+                    <img src={el.networkIcon} alt={el.networkName} />
+                  </div>
+                  <p className={classes.networkName}>{el.networkName}</p>
                 </div>
               );
             })}
@@ -172,50 +1243,39 @@ const Projects = () => {
 
       <div className={classes.projectInfoWrap}>
         {currentTableData.map((el, idx) => {
-          let icon = binance;
-
-          if (el.claimNetworkName === "First") {
-            icon = firstNetwork;
-          } else if (el.claimNetworkName === "Ethereum") {
-            icon = ethereum;
-          } else if (el.claimNetworkName === "Fourth") {
-            icon = fourthNetwork;
-          } else if (el.claimNetworkName === "Fifth") {
-            icon = fifthNetwork;
-          } else if (el.claimNetworkName === "Sixth") {
-            icon = sixthNetwork;
-          }
-
           return (
             <SingleProject
               key={idx}
-              icon={icon}
               {...el}
               idx={idx}
-              selectedFilter={selectedFilter}
+              selectedNetwork={selectedNetwork}
             />
           );
         })}
       </div>
       <div className={classes.actions}>
-        <div className={classes.rowsContainer}>
-          <div>Row Per Page</div>
-          <MenuContainer
-            onSelect={(val) => setItemsPerPage(val.label)}
-            options={[{ label: 5 }, { label: 10 }, { label: 15 }]}
-            defaultSelected={itemsPerPage}
-          >
-            <div className={classes.rowSelector}>
-              {itemsPerPage} <div className={classes.line}></div>{" "}
-              <img src={arrowDropdown2} alt="arrow" />
-            </div>
-          </MenuContainer>
+        <div className={classes.loadMoreAndDropDown}>
+          {" "}
+          <div className={classes.rowsContainer}>
+            <div>Row Per Page</div>
+            <MenuContainer
+              onSelect={(val) => setItemsPerPage(val.label)}
+              options={[{ label: 5 }, { label: 10 }, { label: 15 }]}
+              defaultSelected={itemsPerPage}
+            >
+              <div className={classes.rowSelector}>
+                {itemsPerPage} <div className={classes.line}></div>{" "}
+                <img src={arrowDropdown2} alt="arrow" />
+              </div>
+            </MenuContainer>
+          </div>
+          <LoadMore />
         </div>
-        <LoadMore />
+
         <Pagination
           // className="pagination-bar"
           currentPage={currentPage}
-          totalCount={filteredProjects.length}
+          totalCount={rawProjects.length}
           pageSize={itemsPerPage}
           onPageChange={(page) => setCurrentPage(page)}
           siblingCount={0}

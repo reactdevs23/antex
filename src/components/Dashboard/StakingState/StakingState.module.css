@@ -1,0 +1,117 @@
+.wrapper {
+  padding: 18px;
+  border-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(36, 43, 51, 0.8) 0%,
+      rgba(36, 43, 51, 0.8) 100%
+    ),
+    rgba(36, 43, 51, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.semiCircle {
+  width: 300px;
+  height: 150px;
+  border-top-left-radius: 310px;
+  border-top-right-radius: 310px;
+  border: 20px solid rgba(28, 237, 134, 0.8);
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.value {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  word-break: break-all;
+  padding: 0 40px;
+  padding-top: 18px;
+  position: relative;
+}
+.value::after {
+  content: attr(currency);
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  transform: translateY(-30px);
+}
+
+.gray {
+  color: rgba(255, 255, 255, 0.5);
+}
+.progressbarWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.progressbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  width: 90px;
+}
+.lack {
+  color: #e4f5ff;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.info {
+  color: rgba(228, 245, 255, 0.5);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 520px) {
+  .semiCircle {
+    width: 220px;
+    height: 125px;
+    border: 14px solid rgba(28, 237, 134, 0.8);
+    border-bottom: none;
+  }
+  .value {
+    font-size: 18px;
+    padding: 0 30px;
+    padding-top: 30px;
+  }
+  .value::after {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}

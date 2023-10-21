@@ -1,0 +1,60 @@
+.buttonAndTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.btnWhiteOutlined {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  height: 46px;
+  width: 322px;
+  background-color: transparent;
+  color: #fff;
+  margin-left: auto;
+}
+
+.btnGreen img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+}
+
+.projects {
+  position: relative;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 15px;
+}
+@media only screen and (max-width: 991px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects .arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .projects .arrows {
+    width: 240px;
+  }
+}
+
+.projects .arrows button {
+  background-color: transparent;
+  cursor: pointer;
+}

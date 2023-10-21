@@ -1,3 +1,21 @@
+//navbar
+
+import howToBuyBst from "./navbar/howTobuyBst.png";
+import launchpad from "./navbar/launchpad.png";
+import buyBstToken from "./navbar/buyBstToken.png";
+import blogsAndEditorial from "./navbar/blogsAndEditorial.png";
+import vestingClaim from "./navbar/vestingClaim.png";
+import docsAndGuide from "./navbar/docsAndGuide.png";
+import inoLanuchpad from "./navbar/inoLaunchpad.png";
+import allocationAndEligibility from "./navbar/vestingClaim.png";
+import stakingHome from "./navbar/stakingHome.png";
+import stakingDashBoard from "./navbar/stakingDashboard.png";
+import stakingLeaderBoard from "./navbar/vestingClaim.png";
+import activitiesHistory from "./navbar/activityHIstory.png";
+import voteOnGovernance from "./navbar/voteOnGovernance.png";
+import voteForProjects from "./navbar/voteForProjects.png";
+import contributToDao from "./navbar/contributetoDao.png";
+import airdrop from "./navbar/airdrop.png";
 import copyIcon from "./copyIcon.png";
 import logo from "./logo.svg";
 import user from "./user.svg";
@@ -44,8 +62,8 @@ import tableWithdrawal from "./table-withdrawal.svg";
 import openLink from "./open-link.svg";
 import person from "./person.png";
 import binanceNetwork from "./binance-network.svg";
-import unlockNext from "./unlock-next.svg";
-import vestingCounts from "./vesting-counts.svg";
+import unlockNextIcon from "./unlock-next.svg";
+import vestingCountsIcon from "./vesting-counts.svg";
 import coin from "./coin.svg";
 import videoPlaceholder from "./video-placeholder.svg";
 import network1 from "./network-1.svg";
@@ -74,15 +92,15 @@ import info from "./info.svg";
 import coinInsert from "./coin-insert.svg";
 import back from "./back.svg";
 import protectedIdo2 from "./protected-ido-2.svg";
-import hours from "./24hours.svg";
+import hours24 from "./24hours.png";
 import hamburger from "./hamburger.svg";
 import pageLeft from "./page-left.svg";
 import pageRight from "./page-right.svg";
-import firstNetwork from "./first-network.png";
+import Abitrum from "./first-network.png";
 import ethereum from "./ethereum.svg";
-import fourthNetwork from "./fourth-network.png";
-import fifthNetwork from "./fifth-network.svg";
-import sixthNetwork from "./sixth-network.png";
+import Avalanch from "./fourth-network.png";
+import Polygon from "./fifth-network.svg";
+import Optimism from "./sixth-network.png";
 
 // airdrops
 import uniswap from "./airdrops/uniswap.png";
@@ -109,6 +127,8 @@ import theTeam from "./landingPage/team.png";
 import arrowRight from "./landingPage/arrowRight.png";
 import binanceLogo from "./landingPage/binanceLogo.png";
 import solidash from "./landingPage/solidash.png";
+import upcomingSales1 from "./upcomingSlales1.png";
+import upcomingSales2 from "./upcomingSales2.png";
 
 // launchpad
 
@@ -121,10 +141,44 @@ import binance2 from "./launchpad/binance2.png";
 // vestingDashboard
 import vestingDashboardHeroImg from "./vestingDashboard/heroImg.svg";
 
+import partnerAndInvestors from "./partnerAndInvestors.png";
+
 // footer
 
 import footerLogo from "./footerLogo.png";
+import wave from "./wave.png";
+import charityCoin from "./charityCoin.png";
+import porjectImage from "./binance-coin.svg";
+import walletBalance from "./walletBalance.png";
+import amountToLock from "./amountToLock.png";
+import aptosMark from "./aptosMark.svg";
+import userIcon from "./userIcon.png";
+import notAllowed from "./notAllowed.svg";
+import buyCoinInserter from "./buyCoinInserter.png";
+import uniswapLogo from "./uniwsapLogo.png";
+import bybtLogo from "./bybtLogo.png";
+import mexc1Logo from "./mexc1.png";
+import mexc2Logo from "./mexc2.png";
+import mexc3Logo from "./mexc3.png";
+
 export {
+  howToBuyBst,
+  launchpad,
+  buyBstToken,
+  blogsAndEditorial,
+  vestingClaim,
+  docsAndGuide,
+  inoLanuchpad,
+  allocationAndEligibility,
+  stakingHome,
+  stakingDashBoard,
+  stakingLeaderBoard,
+  activitiesHistory,
+  voteOnGovernance,
+  voteForProjects,
+  contributToDao,
+  airdrop,
+  porjectImage,
   copyIcon,
   logo,
   user,
@@ -171,8 +225,8 @@ export {
   openLink,
   person,
   binanceNetwork,
-  unlockNext,
-  vestingCounts,
+  unlockNextIcon,
+  vestingCountsIcon,
   coin,
   videoPlaceholder,
   network1,
@@ -201,14 +255,11 @@ export {
   coinInsert,
   back,
   protectedIdo2,
-  hours,
+  hours24,
   hamburger,
   pageLeft,
   pageRight,
-  firstNetwork,
-  fourthNetwork,
-  fifthNetwork,
-  sixthNetwork,
+  Abitrum,
   ethereum,
 
   // airdrops
@@ -218,6 +269,8 @@ export {
 
   // landingPage
   wallet,
+  upcomingSales1,
+  upcomingSales2,
   // arbitrum,
   binanceIcon,
   avalanche,
@@ -246,7 +299,23 @@ export {
 
   // vestingDashboard
   vestingDashboardHeroImg,
-
+  partnerAndInvestors,
   // footer
   footerLogo,
+  wave,
+  charityCoin,
+  Avalanch,
+  Polygon,
+  Optimism,
+  walletBalance,
+  amountToLock,
+  aptosMark,
+  userIcon,
+  notAllowed,
+  buyCoinInserter,
+  uniswapLogo,
+  bybtLogo,
+  mexc1Logo,
+  mexc2Logo,
+  mexc3Logo,
 };

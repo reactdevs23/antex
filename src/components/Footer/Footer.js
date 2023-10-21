@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { footerLogo } from "../../images";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const Footer = () => {
   const socialItems = [
@@ -94,7 +95,8 @@ const Footer = () => {
               </Link>
             ))}
           </div>
-        ))}
+        ))}{" "}
+        <ScrollToTop />
       </footer>
       <p className={[styles.copyRight, "mainWrapper"].join(" ")}>
         Copyright 2023 © ArtPanda

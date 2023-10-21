@@ -1,0 +1,55 @@
+.progressBar {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+
+  border-radius: 15px;
+  background: rgba(214, 237, 255, 0.03);
+  margin-top: 4px;
+  padding: 5px;
+  width: 100%;
+
+  transition: background-color 0.5s ease-out;
+  position: relative;
+  z-index: 1;
+}
+.progressBar2 {
+  padding: 0;
+  background: #303331;
+  border: 5px solid rgba(214, 237, 255, 0.16);
+}
+
+.progress {
+  height: 100%;
+  background: #65cdba;
+
+  border-radius: 4px;
+  height: 19px;
+  transition: width 0.5s ease-out;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+.progressBar2 .progress {
+  height: 15px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3px;
+  color: #110f0f;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.salesOver .tooltip {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

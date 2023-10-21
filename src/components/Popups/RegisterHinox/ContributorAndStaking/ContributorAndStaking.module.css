@@ -1,0 +1,54 @@
+.button {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.75%;
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 12px 20px;
+  min-width: 120px;
+  color: #18332e;
+
+  background: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+.activeButton {
+  background: #1dfe8e;
+  color: #18332e;
+  cursor: pointer;
+}
+
+.text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+}
+.highlight {
+  color: #1ced86;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding: 15px;
+    padding-top: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text,
+  .highlight,
+  .button {
+    font-size: 14px;
+  }
+}

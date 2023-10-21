@@ -3,7 +3,10 @@
   background: #242b33;
   flex-grow: 1;
 
-  padding: 30px 24px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1199px) {
@@ -65,7 +68,7 @@
 }
 .card .info .infoItem {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-columns: 1.2fr 0.7fr 0.8fr;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
@@ -196,7 +199,9 @@
 
   flex-shrink: 0;
 }
-
+.right .vestingCounts {
+  word-spacing: 8px;
+}
 @media screen and (max-width: 640px) {
   .card .shortDescItem .right {
     width: 100%;
@@ -261,10 +266,11 @@
 }
 
 .vestingList {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   gap: 6px;
   padding: 10px 0;
 }
@@ -288,7 +294,8 @@
   background: #000;
 }
 
-.viewAll {
+.viewAll,
+.showLess {
   border-radius: 10px;
   background: rgba(229, 243, 255, 0.12);
   height: 40px;
@@ -364,4 +371,30 @@
   font-weight: 600;
   line-height: 26px; /* 185.714% */
   border-radius: 14px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .vestingList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .vestingList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .vestingList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 520px) {
+  .vestingList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vestingList .vestingNum,
+  .showLess,
+  .showAll {
+    font-size: 14px;
+  }
 }

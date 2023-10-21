@@ -1,0 +1,38 @@
+.wrapper {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -70px;
+  top: -170px;
+  background: rgba(15, 56, 29, 0.12);
+  border-radius: 50%;
+  border: 1px solid rgb(28, 237, 134, 0.2);
+  cursor: pointer;
+}
+.arrow {
+  color: #1ced86;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    right: -50px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .wrapper {
+    right: -40px;
+    width: 36px;
+    height: 36px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    top: -115px;
+    right: 0px;
+  }
+}

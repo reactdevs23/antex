@@ -1,0 +1,111 @@
+.wrapper {
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(36, 43, 51, 0.6) 0%,
+      rgba(36, 43, 51, 0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(12, 175, 96, 0.3) 0%, rgba(22, 29, 38, 0) 100%);
+  padding: 18px;
+}
+
+.title {
+  color: #ddffef;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.tagline {
+  color: #ddffef;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  padding: 30px 0;
+}
+.info {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 211.023%;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 0;
+}
+.button {
+  color: #18332e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 168.75%;
+  text-transform: capitalize;
+  border-radius: 15px;
+  padding: 12px 25px;
+  min-width: 200px;
+}
+.joinButton {
+  background: #1dfe8e;
+}
+.voteButton {
+  background: rgba(221, 255, 239, 0.8);
+}
+.contribute {
+  flex-grow: 1;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
+  gap: 5px;
+  text-align: center;
+  min-width: 270px;
+  padding-top: 30px;
+}
+
+.contribute img {
+  cursor: pointer;
+}
+
+.contribute .heading {
+  color: #ddffef;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media only screen and (max-width: 991px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    padding: 8px 20px;
+    min-width: auto;
+    font-size: 14px;
+  }
+}

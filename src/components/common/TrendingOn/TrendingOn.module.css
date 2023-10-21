@@ -1,0 +1,18 @@
+.tradingsOnTitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.tradings {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+@media only creen and (max-width: 520px) {
+  .tradingsOnTitle {
+    font-size: 16px;
+  }
+}

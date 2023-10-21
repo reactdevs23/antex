@@ -13,14 +13,32 @@
   .reserveBoxes > img {
     transform: rotate(90deg);
   }
+  .reserveSpot {
+    flex-direction: row;
+  }
 }
 
 .reserveBox {
-  color: #d6edff;
+  color: rgba(214, 237, 255, 0.6);
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 10px 12px;
   background-color: #242b33;
   border-radius: 10px;
+  cursor: pointer;
+}
+.enabled.reserveBox,
+.executed.reserveBox {
+  color: #d6edff;
+}
+.checkMark {
+  color: #1ced86;
+  font-size: 24px;
+  opacity: 0.3;
+}
+
+.enabled .checkMark,
+.executed .checkMark {
+  opacity: 1;
 }

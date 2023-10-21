@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
-import { bybt, heroImg, kuCoin, uniswap } from "../../../images";
+
+import { useDataContext } from "../../Context";
+import TrendingOn from "../../common/TrendingOn/TrendingOn";
 
 const HeroSection = () => {
-  const trendingOn = [uniswap, kuCoin, bybt, bybt];
+  const { setShowBuyBstModal } = useDataContext();
   return (
     <section>
       <div className={styles.heroSection}>
@@ -22,19 +24,16 @@ const HeroSection = () => {
             >
               Launchpad
             </button>{" "}
-            <button className={[styles.button, styles.buyButton].join(" ")}>
+            <button
+              className={[styles.button, styles.buyButton].join(" ")}
+              onClick={() => {
+                setShowBuyBstModal(true);
+              }}
+            >
               Buy $BST
             </button>
           </div>
-          <div className={styles.tradingsOn}>
-            <h4 className={styles.tradingsOnTitle}>Trading on:</h4>
-
-            <div className={styles.tradings}>
-              {trendingOn.map((el, i) => (
-                <img src={el} alt="#" key={i} className={styles.trading} />
-              ))}
-            </div>
-          </div>
+          <TrendingOn />
         </div>
       </div>
     </section>

@@ -1,0 +1,118 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.summary {
+  border-radius: 10px;
+  background: linear-gradient(0deg, #242b33 0%, #242b33 100%),
+    rgba(36, 43, 51, 0.8);
+  padding: 12px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.title {
+  color: #e4f5ff;
+  font-family: Avenir Next;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 15px;
+}
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.label {
+  color: rgba(228, 245, 255, 0.7);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.667%;
+  text-transform: capitalize;
+}
+.value {
+  color: #fff;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.gray {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-radius: 15px;
+}
+.button {
+  background: transparent;
+  color: rgba(24, 51, 46, 1);
+  color: #18332e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+  text-transform: capitalize;
+  padding: 8px 15px;
+  min-width: 130px;
+  cursor: pointer;
+  background: rgba(29, 254, 142, 1);
+  border-radius: 0 15px 15px 0;
+  transition: 0.5s;
+}
+.button:hover {
+  background: #18332e;
+  color: #fff;
+  transform: none;
+}
+.left {
+  border-right: 1px solid #d6edff;
+  border-radius: 15px 0 0 15px;
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .title {
+    font-size: 16px;
+  }
+  .label {
+    font-size: 13px;
+  }
+  .value {
+    font-size: 15px;
+  }
+  .gray {
+    font-size: 13px;
+  }
+  .button {
+    font-size: 13px;
+  }
+}

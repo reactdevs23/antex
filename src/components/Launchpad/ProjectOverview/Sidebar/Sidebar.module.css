@@ -4,11 +4,12 @@
   gap: 12px;
   border-right: 1px solid #353f49;
   padding: 12px;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #353f49;
+
+  width: 100%;
 }
 
 .heading {
@@ -18,7 +19,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150.4%; /* 24.064px */
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 .item {
@@ -32,4 +34,36 @@
 }
 .activeItem {
   color: #1ced86;
+}
+.icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 991px) {
+  .sidebar {
+    transform: translateX(-150%);
+    position: fixed;
+    background-color: #353f49;
+    transition: 0.3s;
+    top: 50px;
+    left: 0;
+    width: 300px;
+    border-radius: 12px;
+  }
+  .showSidebar {
+    transform: translateX(0);
+  }
+  .heading {
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .sidebar {
+    width: 100%;
+  }
 }

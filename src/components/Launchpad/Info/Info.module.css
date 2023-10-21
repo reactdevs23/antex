@@ -24,8 +24,133 @@
   line-height: normal;
   cursor: pointer;
   text-transform: capitalize;
+  padding-bottom: 3px;
 }
 .activeTab {
   color: #23ae6a;
   border-bottom: 1px solid #23ae6a;
 }
+.container {
+}
+@media only screen and (max-width: 1199px) {
+  .tab {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+}
+/* .wrapper {
+  background: #242b33;
+  border-radius: 10px;
+  padding: 12px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+}
+
+.tab {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding-bottom: 3px;
+}
+.activeTab {
+  color: #23ae6a;
+  border-bottom: 1px solid #23ae6a;
+}
+.iconContainer {
+  background: #1dfe8e;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: auto;
+  right: 12px;
+  display: none;
+  cursor: pointer;
+
+  z-index: 8;
+  margin-bottom: 12px;
+}
+.icon {
+  cursor: pointer;
+  color: #000;
+  font-size: 24px;
+
+  text-align: center;
+}
+@media only screen and (max-width: 1199px) {
+  .tab {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-height: 400px;
+    border-radius: 12px;
+  }
+  .header {
+    transform: translateX(150%);
+
+    background-color: #353f49;
+    transition: 0.3s;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 300px;
+    padding: 15px 18px;
+    z-index: 5;
+  }
+  .showSidebar {
+    transform: translateX(0);
+  }
+  .iconContainer {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* .header {
+    grid-template-columns: 1fr 1fr;
+  } */
+
+/* @media only screen and (max-width: 520px) {
+  .header {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+} */

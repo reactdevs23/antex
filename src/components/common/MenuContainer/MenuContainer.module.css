@@ -44,3 +44,6 @@
   background: #1ced86;
   color: #0f381d;
 }
+.rotate svg {
+  transform: rotate(180deg);
+}

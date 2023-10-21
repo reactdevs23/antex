@@ -20,8 +20,21 @@ const MenuContainer = ({
   });
 
   return (
-    <div className={clsx(classes.menuWrap, className)} ref={menuRef}>
-      <div onClick={() => setIsMenuActive(true)}>{children}</div>
+    <div
+      className={clsx(
+        classes.menuWrap,
+        className,
+        isMenuActive && classes.rotate
+      )}
+      ref={menuRef}
+    >
+      <div
+        onClick={() => {
+          setIsMenuActive((prev) => !prev);
+        }}
+      >
+        {children}
+      </div>
 
       {isMenuActive && (
         <div className={classes.options}>

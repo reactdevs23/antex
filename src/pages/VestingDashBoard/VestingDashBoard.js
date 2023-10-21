@@ -7,7 +7,7 @@ import LaunchProject from "../../components/LandingPage/LaunchProject/LaunchProj
 import Register from "../../components/Register/Register";
 const VestingDashBoard = () => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <HeroSection />
       <div className={styles.marginTop}>
         <ProjectInfoAndCounter />

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+
 import styles from "./ProjectOverview.module.css";
+import { AiOutlineAlignLeft } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
 import Sidebar from "./Sidebar/Sidebar";
+import { Element } from "react-scroll";
 
 const ProjectOverview = () => {
+  const [sidebar, setSidebar] = useState(false);
   const highlights = [
     "Contrary to popular belief, Lorem Ipsum is not simply random text.",
     "Contrary to popular belief, Lorem Ipsum is not simply random text.",
@@ -12,8 +17,17 @@ const ProjectOverview = () => {
     "Contrary to popular belief, Lorem Ipsum is not simply random text.",
   ];
   return (
-    <div>
-      <Sidebar />
+    <div
+      className={[styles.mainWrapper, "overflow"].join(" ")}
+      id="containerElement"
+    >
+      <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
+      <div
+        className={styles.iconContainer}
+        onClick={() => setSidebar((prev) => !prev)}
+      >
+        <AiOutlineAlignLeft className={styles.icon} />
+      </div>
       <div className={styles.wrapper}>
         <div className={styles.highlightsContainer}>
           <h3 className={styles.heading}>Highlights</h3>
@@ -43,6 +57,7 @@ const ProjectOverview = () => {
             amet..", comes from a line in section 1.10.32.
           </p>
         </div>
+        <Element></Element>
         <div id="problem" className={styles.problem}>
           <h4 className={styles.heading}>PROBLEM</h4>
 

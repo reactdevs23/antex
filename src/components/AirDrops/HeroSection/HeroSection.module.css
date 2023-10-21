@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-top: 70px;
-  padding-bottom: 24px;
+  padding-top: 200px;
+  padding-bottom: 40px;
 }
 .heading {
   font-family: Inter;
@@ -62,19 +62,7 @@
 .buyButton {
   background: rgba(221, 255, 239, 0.8);
 }
-.tradingsOnTitle {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.tradings {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
+
 @media only screen and (max-width: 991px) {
   .heading {
     font-size: 53px;
@@ -83,10 +71,13 @@
     font-size: 24px;
   }
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 767px) {
   .wrapper {
-    padding-top: 50px;
+    padding-top: 144px;
+    padding-bottom: 24px;
   }
+}
+@media only screen and (max-width: 520px) {
   .heading {
     font-size: 42px;
   }
@@ -103,8 +94,5 @@
     min-width: auto;
     padding: 10px 25px;
     font-size: 14px;
-  }
-  .tradingsOnTitle {
-    font-size: 16px;
   }
 }

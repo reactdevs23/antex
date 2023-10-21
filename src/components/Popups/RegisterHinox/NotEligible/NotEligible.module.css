@@ -1,0 +1,77 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+.notAllowed {
+  width: 80px;
+}
+.textContainer {
+  max-width: 609px;
+  margin: 0 auto;
+  width: 100%;
+}
+.text {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+}
+.learnMore {
+  color: #059dff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.green {
+  color: #1ced86;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 400px;
+}
+.button {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.75%;
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 12px 20px;
+  min-width: 120px;
+}
+.contributeButton {
+  background: #1dfe8e;
+  color: #18332e;
+}
+.goToStakingButton {
+  color: #18332e;
+
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 520px) {
+  .buttonContainer {
+    gap: 12px;
+  }
+  .button {
+    font-size: 14px;
+    min-width: 110px;
+  }
+  .text {
+    font-size: 14px;
+  }
+}

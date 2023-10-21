@@ -1,0 +1,165 @@
+.heroSection {
+  background: url(../../../images/launchpad/heroImg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+.subHeading {
+  color: rgba(28, 237, 134, 0.5);
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 128.75%;
+  letter-spacing: 13px;
+  text-transform: capitalize;
+}
+.heading {
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #ddffef;
+}
+
+.text {
+  color: #e4f5ff;
+  font-family: Avenir Next;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 135%;
+  max-width: 340px;
+  width: 100%;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0;
+}
+.button {
+  color: #18332e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 168.75%;
+  text-transform: capitalize;
+  border-radius: 15px;
+  padding: 12px 25px;
+  min-width: 200px;
+}
+.launchPadButton {
+  background: #1dfe8e;
+}
+.buyButton {
+  background: rgba(221, 255, 239, 0.8);
+}
+.tradingAndFeature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  border-radius: 15px;
+  border: 1px solid rgba(245, 251, 242, 0.44);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.03) -30.29%,
+      rgba(255, 255, 255, 0) 144.92%
+    );
+  backdrop-filter: blur(25px);
+  padding: 12px;
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.valueAndInfo {
+  padding: 0 44px;
+  position: relative;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.value {
+  color: #ddffef;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  padding-bottom: 6px;
+}
+.info {
+  color: #ddffef;
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media only screen and (max-width: 991px) {
+  .heading {
+    font-size: 53px;
+  }
+  .subHeading {
+    font-size: 24px;
+  }
+  .feature {
+    display: none;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    padding-top: 144px;
+    padding-bottom: 24px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .subHeading {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .buttonContainer {
+    padding: 8px 0;
+  }
+  .button {
+    min-width: auto;
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}

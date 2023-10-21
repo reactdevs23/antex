@@ -1,0 +1,116 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 382px;
+  align-items: start;
+  gap: 25px;
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  left: 0;
+  padding-top: 90px;
+  background: #000;
+  z-index: 100;
+  padding: 20px;
+  border-radius: 12px;
+}
+.left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.iconAndText {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.titleAndDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.title {
+  color: #e5f3ff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.286%;
+  letter-spacing: 1.4px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.description {
+  color: rgba(200, 233, 255, 0.6);
+  font-family: Avenir Next;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 15px;
+  border-left: 1px solid rgba(62, 88, 118, 0.5);
+}
+.image {
+  display: block;
+  width: 100%;
+}
+.heading {
+  color: #e5f3ff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 1.6px;
+  padding: 3px 0;
+}
+.cross {
+  display: none;
+}
+@media only screen and (max-width: 1280px) {
+  .wrapper {
+    width: calc(100vw - 320px);
+    position: fixed;
+    top: 0;
+    grid-template-columns: 1fr;
+    align-items: start;
+    z-index: 12;
+  }
+  .left {
+    grid-template-columns: 1fr 1fr;
+  }
+  .right {
+    border: none;
+  }
+  .image {
+    max-height: 300px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .left {
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    min-width: 95%;
+
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(0px);
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .cross {
+    display: block;
+    /* position: absolute; */
+    margin-top: 0px;
+
+    margin-left: auto;
+    width: 26px;
+    cursor: pointer;
+  }
+}

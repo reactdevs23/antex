@@ -3,6 +3,9 @@
   background: #242b33;
   margin-top: 10px;
 }
+.selected {
+  /* background: rgb(0, 0, 0, 0.4); */
+}
 
 .projectInfo .top {
   padding: 24px 14px;
@@ -234,7 +237,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 185.714% */
+  line-height: 185.714%;
 }
 
 .projectInfo .bottom .actions .claimBtn {
@@ -254,7 +257,15 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 185.714% */
+  line-height: 185.714%;
+  text-align: center;
+}
+.claimBtn .text {
+  margin-left: 15px;
+}
+.arrow {
+  color: #000;
+  font-size: 20px;
 }
 
 .projectInfo .bottom .bnb {

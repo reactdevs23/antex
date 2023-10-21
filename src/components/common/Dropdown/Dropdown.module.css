@@ -29,16 +29,16 @@
 
 .dropdown .value {
   color: rgba(229, 243, 255, 0.5);
-  text-align: center;
+
   flex-grow: 1;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 142.857% */
+  line-height: 142.857%;
+  text-align: center;
+  padding-left: 10px;
 }
 
 .dropdown .arrow {
-  position: absolute;
-  top: 14px;
-  right: 14px;
+  min-width: 12px;
 }

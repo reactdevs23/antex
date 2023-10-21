@@ -4,11 +4,11 @@ import ManageStaking from "../../components/Staking/ManageStaking/ManageStaking"
 
 import Faq from "../../components/Staking/Faq/Faq";
 import styles from "./Staking.module.css";
-import HeroSection from "../../components/LandingPage/HeroSection/HeroSection";
+import HeroSection from "../../components/Staking/HeroSection/HeroSection";
 
 const Staking = () => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <HeroSection />
       <AvailablePools />
       <ManageStaking />

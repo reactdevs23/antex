@@ -1,0 +1,148 @@
+.chart {
+  border-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(36, 43, 51, 0.8) 0%,
+      rgba(36, 43, 51, 0.8) 100%
+    ),
+    rgba(36, 43, 51, 0.8);
+  padding-top: 18px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 15px;
+}
+
+.value {
+  color: #fff;
+  text-align: center;
+  font-family: Fira Code;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 0.3;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chart {
+  /* margin-right: -15px;
+  margin-left: -15px; */
+  position: relative;
+}
+
+.tabContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.durationContainer {
+  margin-left: auto;
+}
+
+.tab {
+  color: #c2c2c2;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 8px 10px;
+
+  border: 1px solid rgba(128, 129, 149, 0.3);
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.activeTab {
+  color: #18332e;
+
+  background: #1ee0ac;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.myChart {
+  position: relative;
+  z-index: -1;
+}
+.tooltip {
+  background: rgba(18, 24, 31, 1);
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px;
+  border: 1px solid rgba(18, 24, 31, 1);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.tooltipText {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 4px;
+}
+.date {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.greenCircle {
+  background: #0caf60;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+.blueCircle {
+  background: #059dff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+.yellowCircle {
+  background: #fb774a;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+
+.purpleCircle {
+  background: #c895ff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}

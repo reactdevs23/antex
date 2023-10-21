@@ -3,8 +3,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 140px;
+  padding-top: 70px;
+  padding-bottom: 100px;
 }
 .heroSection {
   display: grid;
@@ -73,9 +73,6 @@
   max-width: 457px;
 }
 @media only screen and (max-width: 991px) {
-  .wrapper {
-    padding-top: 100px;
-  }
   .heroSection {
     grid-template-columns: 1fr;
     gap: 15px;

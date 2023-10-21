@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 356px;
   gap: 25px;
-  padding: 25px 0;
 }
 .textcontainer {
   background: #242b33;

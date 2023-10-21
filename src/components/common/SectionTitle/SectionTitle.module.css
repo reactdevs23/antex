@@ -1,13 +1,15 @@
 .sectionTitle {
   color: #ddffef;
   font-family: Poppins;
-  padding-top: 12px;
-  margin-bottom: 24px;
+  padding-bottom: 25px;
+
   display: flex;
   align-items: center;
   gap: 22px;
 }
-
+.noSpace {
+  padding: 0;
+}
 .sectionTitle.center {
   justify-content: center;
 }
@@ -22,4 +24,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 520px) {
+  .sectionTitle {
+    padding-bottom: 12px;
+  }
+  .noSpace {
+    padding: 0;
+  }
 }

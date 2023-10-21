@@ -1,0 +1,120 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  border-radius: 25px;
+  background: #242b33;
+  width: 90%;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+
+  padding-top: 40px;
+  width: calc(100vw - 32px);
+  max-width: 578px;
+  z-index: 8;
+  max-height: calc(100vh - 80px);
+
+  overflow-y: auto;
+  padding: 40px 20px;
+  padding-top: 50px;
+}
+.closeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(248, 248, 248, 1);
+  cursor: pointer;
+  margin-left: auto;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.close {
+  color: rgba(248, 248, 248, 1);
+  font-size: 20px;
+}
+.text {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bold {
+  font-weight: 600;
+}
+.successIcon {
+  font-size: 50px;
+  color: #1ced86;
+}
+.done {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 300px;
+}
+.button {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.75%;
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 12px 20px;
+  min-width: 120px;
+}
+.reseveSpotButton {
+  background: #1dfe8e;
+  color: #18332e;
+}
+.dismissButton {
+  color: #18332e;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(36, 43, 51, 0.1);
+  backdrop-filter: blur(150px);
+  z-index: 7;
+  height: 100vh;
+  width: 100vw;
+  cursor: pointer;
+}
+@media only screen and (max-width: 520px) {
+  .buttonContainer {
+    gap: 12px;
+  }
+  .button {
+    font-size: 14px;
+    min-width: 110px;
+  }
+}
