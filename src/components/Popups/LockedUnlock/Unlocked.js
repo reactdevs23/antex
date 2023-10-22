@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { modalCross, back } from "../../../images";
+import React from "react";
+
 import LoadMore from "../../common/LoadMore/LoadMore";
 import classes from "./styles.module.css";
 const Unlocked = ({ data }) => {

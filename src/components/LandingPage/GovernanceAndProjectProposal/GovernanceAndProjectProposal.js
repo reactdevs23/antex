@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./GovernanceAndProjectProposal.module.css";
 import { videoPlaceholder } from "../../../images";
+import ReactPlayer from "react-player";
 
 const GovernanceAndProjectProposal = () => {
   const [videoClicked, setVideoClicked] = useState(false);
@@ -40,7 +41,18 @@ const GovernanceAndProjectProposal = () => {
             />
           )}
           {videoClicked && (
-            <iframe
+            <div className={styles.videoWrapper}>
+              <ReactPlayer
+                className={styles.player}
+                url="https://www.youtube.com/embed/tQUzJCmkJ_M?si=YniqhlI9j-LZjSIG&autoplay=1"
+                width="100%"
+                height="100%"
+                controls
+                playing
+              />
+            </div>
+
+            /* <iframe
               width="100%"
               height="315"
               src="https://www.youtube.com/embed/tQUzJCmkJ_M?si=YniqhlI9j-LZjSIG&autoplay=1"
@@ -48,7 +60,7 @@ const GovernanceAndProjectProposal = () => {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
-            ></iframe>
+            ></iframe> */
           )}
         </div>
       </div>

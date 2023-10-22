@@ -1,14 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import ReactPaginate from "react-paginate";
 
-import clsx from "clsx";
-
-import MenuContainer from "../../common/MenuContainer/MenuContainer";
-import LoadMore from "../../common/LoadMore/LoadMore";
+import MenuContainer from "../../components/common/MenuContainer/MenuContainer";
+import LoadMore from "../../components/common/LoadMore/LoadMore";
 import classes from "./LeaderBoard.module.css";
-import { arrowDropdown2, magnifier } from "../../../images";
+import { arrowDropdown2, magnifier } from "../../images";
 import DataTable from "./DataTable/DataTable";
-import Tabs from "../../Staking/Tabs/Tabs";
+import Tabs from "../../components/Staking/Tabs/Tabs";
 
 const LeaderBoard = () => {
   const [searchState, setSearchState] = useState("");

@@ -1,8 +1,6 @@
 import React from "react";
-import clsx from "clsx";
-
+import { openLink } from "../../../images";
 import classes from "./DataTable.module.css";
-import { openLink } from "../../../../images";
 
 const DataTable = ({ data }) => {
   return (

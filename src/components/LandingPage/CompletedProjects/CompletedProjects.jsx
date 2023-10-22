@@ -1,7 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-
+import { useMemo, useState } from "react";
 import SectionTitle from "../../common/SectionTitle/SectionTitle";
-
 import LoadMore from "../../common/LoadMore/LoadMore";
 import MenuContainer from "../../common/MenuContainer/MenuContainer";
 import Pagination from "../../common/Pagination/Pagination";
@@ -11,7 +9,6 @@ import {
   tableProjectItem,
 } from "../../../images";
 import classes from "./CompletedProjects.module.css";
-
 const tableRows = [
   {
     icon: tableProjectItem,

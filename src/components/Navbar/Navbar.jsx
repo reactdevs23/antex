@@ -37,7 +37,7 @@ const links = [
       {
         icon: launchpad,
         title: "Launchpad",
-        to: "/",
+        to: "/launchpad",
         description: "All IDO sales, from active,upcoming and past sales.",
       },
       {
@@ -127,7 +127,7 @@ const links = [
   },
   {
     label: "Staking",
-    to: "/staking",
+
     info: [
       {
         icon: stakingHome,

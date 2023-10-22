@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./HoverComponent.module.css";
 import { modalCross } from "../../../images";
 import { Link } from "react-router-dom";
 import { useDataContext } from "../../Context";
+import styles from "./HoverComponent.module.css";
 
 const HoverComponent = ({
   info,
@@ -13,6 +13,9 @@ const HoverComponent = ({
   const { setShowBuyBstModal } = useDataContext();
   return (
     <div
+      initial={{ height: 0 }}
+      animate={{ height: "auto" }}
+      exit={{ height: 0 }}
       className={styles.wrapper}
       onMouseEnter={() => {
         window.innerWidth > 991 && setShowHoverComponent(true);

@@ -1,14 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import ReactPaginate from "react-paginate";
 
-import clsx from "clsx";
-
-import Dropdown from "../../common/Dropdown/Dropdown";
-import DatePicker from "../../common/DatePicker/DatePicker";
+import Dropdown from "../../components/common/Dropdown/Dropdown";
+import DatePicker from "../../components/common/DatePicker/DatePicker";
 
 import classes from "./ActivitiesHistory.module.css";
-import MenuContainer from "../../common/MenuContainer/MenuContainer";
-import LoadMore from "../../common/LoadMore/LoadMore";
+import MenuContainer from "../../components/common/MenuContainer/MenuContainer";
+import LoadMore from "../../components/common/LoadMore/LoadMore";
 import {
   arrowDropdown2,
   magnifier,
@@ -16,10 +14,9 @@ import {
   tableLock,
   tableStake,
   tableWithdrawal,
-} from "../../../images";
+} from "../../images";
 import DataTable from "./DataTable/DataTable";
-import Tabs from "../../Staking/Tabs/Tabs";
-// import Pagination from "components/common/Pagination/Pagination";
+import Tabs from "../../components/Staking/Tabs/Tabs";
 
 const ActivitiesHistory = () => {
   const [searchState, setSearchState] = useState("");

@@ -1,10 +1,10 @@
 import React from "react";
 
 import clsx from "clsx";
-import { arbitrum } from "../../images";
+import { arbitrum } from "../../../images";
 
-import ProgressBar from "../common/Progressbar/Progressbar";
-import CountDown from "../common/CountDown/CountDown";
+import ProgressBar from "../Progressbar/Progressbar";
+import CountDown from "../CountDown/CountDown";
 import classes from "./SingleProject.module.css";
 
 const SingleProject = ({ project }) => {

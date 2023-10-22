@@ -11,7 +11,7 @@ import {
 } from "../../../images";
 import classes from "./UpcomingProjects.module.css";
 
-import SingleProject from "../../SingleProject/SingleProject";
+import SingleProject from "../../common/SingleProject/SingleProject";
 
 const UpcomingProjects = () => {
   const slider = useRef();

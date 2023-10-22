@@ -1,7 +1,7 @@
 import React from "react";
 import { athroi, fundsProjects, raisedon } from "../../../images";
 import styles from "./Achivement.module.css";
-import Counter from "../../common/Counter/Counter";
+import Counter from "../Counter/Counter";
 
 const Achivement = () => {
   return (

@@ -1,23 +1,21 @@
 import { Route, Routes } from "react-router-dom";
 import BuyBstModal from "./components/Popups/BuyBstModal/BuyBstModal";
 import Navbar from "./components/Navbar/Navbar";
-import AirDrop from "./pages/AirDrops/AirDrops";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LaunchPad from "./pages/LaunchPad/LaunchPad";
-import TokenInfo from "./components/Launchpad/Info/TokenInfo/TokenInfo";
-
 import Staking from "./pages/Staking/Staking";
 import Footer from "./components/Footer/Footer";
 import VestingDashBoard from "./pages/VestingDashBoard/VestingDashBoard";
-import Activities from "./pages/Activities/Activities";
-import "@splidejs/react-splide/css";
-import "react-datepicker/dist/react-datepicker.css";
-import Dashboard from "./components/Activities/Dashboard/Dashboard";
-import { useDataContext } from "./components/Context";
-import ActivitiesHistory from "./components/Activities/ActivitiesHistory/ActivitiesHistory";
-import LeaderBoard from "./components/Activities/LeaderBoard/LeaderBoard";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import ActivitiesHistory from "./pages/ActivitiesHistory/ActivitiesHistory";
+import LeaderBoard from "./pages/LeaderBoard/LeaderBoard";
 import WalletNotConnected from "./components/Popups/WalletNotConnected/WalletNotConnected";
 import NoVestingForThisWallet from "./components/Popups/NoVestingForThisWallet/NoVestingForThisWallet";
+import AirDrops from "./pages/AirDrops/AirDrops";
+import INOLaunchPad from "./pages/INOLaunchpad/INOLaunchpad";
+import "@splidejs/react-splide/css";
+import "react-datepicker/dist/react-datepicker.css";
+import { useDataContext } from "./components/Context";
 
 function App() {
   const {
@@ -31,8 +29,11 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Staking />} />
+        <Route path="/" element={<LandingPage />} />
+
         <Route path="/launchpad" element={<LaunchPad />} />
+        <Route path="/ino-launchpad" element={<INOLaunchPad />} />
+        <Route path="/airdrop" element={<AirDrops />} />
         <Route path="/vestingdashoboard" element={<VestingDashBoard />} />
         <Route path="/staking" element={<Staking />} />
         <Route path="/staking-dashboard" element={<Dashboard />} />
@@ -52,14 +53,5 @@ function App() {
     </>
   );
 }
-// <Routes>
-//       <Route path="/" element={<Navigate to="billing" />} />
-//       <Route path="/billing" element={<Billing />} />{" "}
-//       <Route path="/invoices" element={<Invoices />} />
-//       <Route path="/members" element={<Members />} />
-//       <Route path="/apikeys" element={<ApiKeys />} />
-//       <Route path="/referrals" element={<Referrel />} />
-//       <Route path="/settings" element={<Settigs />} />
-//     </Routes>
 
 export default App;

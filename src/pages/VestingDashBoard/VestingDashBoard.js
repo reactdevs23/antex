@@ -4,7 +4,8 @@ import ProjectInfoAndCounter from "../../components/common/ProjectInfoAndCounter
 import styles from "./VestingDashBoard.module.css";
 import Projects from "../../components/VestingDashboard/Projects/Projects";
 import LaunchProject from "../../components/LandingPage/LaunchProject/LaunchProject";
-import Register from "../../components/Register/Register";
+import SubsCriber from "../../components/common/Subscriber/Subcriber";
+
 const VestingDashBoard = () => {
   return (
     <div className={styles.wrapper}>
@@ -14,7 +15,7 @@ const VestingDashBoard = () => {
       </div>
       <Projects />
       <LaunchProject />
-      <Register />
+      <SubsCriber />
     </div>
   );
 };

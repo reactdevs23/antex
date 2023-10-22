@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./DeeperIntoOurEcosystem.module.css";
-import SubsCribe from "../../Register/SubsCribe/SubsCribe";
+import SubsCribe from "../../common/Subscriber/SubsCribe/SubsCribe";
 
 const DeeperIntoOurEcosystem = () => {
   return (

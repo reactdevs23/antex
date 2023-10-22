@@ -1,5 +1,5 @@
 import React from "react";
-import { notConnected } from "../../../images";
+
 import { MdOutlineClose } from "react-icons/md";
 
 import { useDataContext } from "../../Context";

@@ -1,6 +1,6 @@
 import React from "react";
 import { HiArrowSmRight } from "react-icons/hi";
-import styles from "./Register.module.css";
+import styles from "./Subscriber.module.css";
 import SubsCribe from "./SubsCribe/SubsCribe";
 
 const Register = () => {
