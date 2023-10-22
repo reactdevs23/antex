@@ -144,6 +144,8 @@ const links = [
       {
         icon: blogsAndEditorial,
         title: "Blogs and editorial",
+        link: true,
+        to: "#",
         description:
           "Explore our articles for expert insights and actionable tips that  helps you stay beyond the curves.",
       },
@@ -213,7 +215,8 @@ const links = [
       {
         icon: docsAndGuide,
         title: "Docs & guilds",
-        to: "/",
+        link: true,
+        to: "#",
         description:
           "Explore our docs and deep dive into our helpful tips to help in easy and seamless navigation on Hinox",
       },
