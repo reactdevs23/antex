@@ -27,6 +27,7 @@ import {
 import clsx from "clsx";
 import classes from "./Navbar.module.css";
 import HoverComponent from "./HoverComponent/HoverComponent";
+import { useDataContext } from "../Context";
 
 const links = [
   {
@@ -279,10 +280,22 @@ const links = [
 ];
 
 const Navbar = () => {
+  const {
+    walletConnected,
+    vestingForTWallet,
+    setShowWalletNotConnectedModal,
+    setShowNoVestingForThisWallet,
+  } = useDataContext();
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   const [activeHoverComponent, setShowAcitiveHoverComponent] = useState(null);
   const [showHoverComponent, setShowHoverComponent] = useState(false);
+  const handleConnectButton = () => {
+    if (!walletConnected) setShowWalletNotConnectedModal(true);
+    else if (walletConnected && !vestingForTWallet) {
+      setShowNoVestingForThisWallet(true);
+    }
+  };
 
   return (
     <div
@@ -344,7 +357,9 @@ const Navbar = () => {
               <button className={classes.btn}>
                 <img src={sun} alt="sun" />
               </button>
-              <button className={classes.connect}>Connect Wallet</button>
+              <button className={classes.connect} onClick={handleConnectButton}>
+                Connect Wallet
+              </button>
             </div>{" "}
             {showHoverComponent && links[activeHoverComponent].info && (
               <HoverComponent

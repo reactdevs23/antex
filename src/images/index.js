@@ -160,6 +160,7 @@ import bybtLogo from "./bybtLogo.png";
 import mexc1Logo from "./mexc1.png";
 import mexc2Logo from "./mexc2.png";
 import mexc3Logo from "./mexc3.png";
+import notConnected from "./notConnected.png";
 
 export {
   howToBuyBst,
@@ -318,4 +319,5 @@ export {
   mexc1Logo,
   mexc2Logo,
   mexc3Logo,
+  notConnected,
 };

@@ -13,14 +13,20 @@ import Activities from "./pages/Activities/Activities";
 import "@splidejs/react-splide/css";
 import "react-datepicker/dist/react-datepicker.css";
 import Dashboard from "./components/Activities/Dashboard/Dashboard";
-import RegisterHinox from "./components/Popups/RegisterHinox/RegisterHinox";
 import { useDataContext } from "./components/Context";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ActivitiesHistory from "./components/Activities/ActivitiesHistory/ActivitiesHistory";
 import LeaderBoard from "./components/Activities/LeaderBoard/LeaderBoard";
+import WalletNotConnected from "./components/Popups/WalletNotConnected/WalletNotConnected";
+import NoVestingForThisWallet from "./components/Popups/NoVestingForThisWallet/NoVestingForThisWallet";
 
 function App() {
-  const { showBuyBstModal } = useDataContext();
+  const {
+    showBuyBstModal,
+    walletConnected,
+    vestingForThisWallet,
+    showNoVestingForThisWallet,
+    showWalletNotConnectedModal,
+  } = useDataContext();
   return (
     <>
       <Navbar />
@@ -37,6 +43,12 @@ function App() {
       <Footer />
 
       {showBuyBstModal && <BuyBstModal />}
+      {!walletConnected && showWalletNotConnectedModal && (
+        <WalletNotConnected />
+      )}
+      {!vestingForThisWallet && showNoVestingForThisWallet && (
+        <NoVestingForThisWallet />
+      )}
     </>
   );
 }

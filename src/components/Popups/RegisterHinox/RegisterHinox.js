@@ -3,9 +3,6 @@ import { MdOutlineClose } from "react-icons/md";
 import styles from "./RegisterHinox.module.css";
 import ContributorAndStaking from "./ContributorAndStaking/ContrubutorAndStaking";
 import EnterAptosWallet from "./EnterAptosWallet/EnterAptosWallet";
-import WaitingForConfirmation from "./WaitingForConfirmation/WaitingForConfirmation";
-import RegistrationCompletedModal from "./RegistrationCompletedModal/RegistrationCompletedModal";
-import ReserveSpot from "../ReserveSpot/ReserveSpot";
 import NotEligible from "./NotEligible/NotEligible";
 
 const RegisterHinox = ({
