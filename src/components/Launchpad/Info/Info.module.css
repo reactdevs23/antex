@@ -28,7 +28,7 @@
 }
 .activeTab {
   color: #23ae6a;
-  border-bottom: 1px solid #23ae6a;
+  text-decoration: underline;
 }
 .container {
 }

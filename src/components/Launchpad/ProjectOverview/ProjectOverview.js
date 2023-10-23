@@ -5,6 +5,7 @@ import { AiOutlineAlignLeft } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import Sidebar from "./Sidebar/Sidebar";
 import { Element } from "react-scroll";
+import ProjectIntro from "./ProjectIntro/ProjectIntro";
 
 const ProjectOverview = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -29,6 +30,7 @@ const ProjectOverview = () => {
         <AiOutlineAlignLeft className={styles.icon} />
       </div>
       <div className={styles.wrapper}>
+        <ProjectIntro />
         <div className={styles.highlightsContainer}>
           <h3 className={styles.heading}>Highlights</h3>
           <div className={styles.highlights}>
