@@ -139,7 +139,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
   width: 100%;
 }
 @media screen and (max-width: 1024px) {
@@ -152,9 +152,6 @@
 @media screen and (max-width: 640px) {
   .actions {
     flex-direction: column;
-  }
-  .loadMoreAndDropDown {
-    justify-content: center;
   }
 }
 
@@ -169,7 +166,7 @@
   text-transform: capitalize;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
 }
 
 .rowsContainer .line {
@@ -182,25 +179,20 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
-  width: 79px;
-  height: 50px;
+  width: 75px;
+  height: 45px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
   cursor: pointer;
 }
-@media only screen and (max-width: 640px) {
-  .rowsContainer .rowSelector {
-    width: 80px;
-    height: 40px;
-  }
-  .rowsContainer .line {
-    height: 20px;
-  }
+@media only screen and (max-width: 767px) {
   .rowsContainer {
     font-size: 14px;
-
     gap: 12px;
+  }
+  .rowsContainer .rowSelector {
+    height: 40px;
   }
 }

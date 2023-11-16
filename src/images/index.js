@@ -23,6 +23,8 @@ import sun from "./sun.svg";
 import bgHero from "./bg-hero.png";
 // import binanceCoin from "./binance-coin.svg";
 import upcoming from "./upcoming.svg";
+import live from "./live.svg";
+import ended from "./ended.svg";
 import dribbble from "./dribbble.svg";
 import youtube from "./youtube.svg";
 import whatsapp from "./whatsapp.svg";
@@ -161,6 +163,8 @@ import mexc1Logo from "./mexc1.png";
 import mexc2Logo from "./mexc2.png";
 import mexc3Logo from "./mexc3.png";
 import notConnected from "./notConnected.png";
+//
+import allocation from "./allocation.png";
 
 export {
   howToBuyBst,
@@ -187,6 +191,8 @@ export {
   bgHero,
   binanceCoin,
   upcoming,
+  live,
+  ended,
   dribbble,
   youtube,
   whatsapp,
@@ -320,4 +326,6 @@ export {
   mexc2Logo,
   mexc3Logo,
   notConnected,
+  //
+  allocation,
 };

@@ -11,16 +11,17 @@
   gap: 18px;
   flex-wrap: wrap;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 12px;
   padding-bottom: 12px;
 }
 
 .tab {
   color: #fff;
   text-align: center;
-  font-family: Poppins;
-  font-size: 20px;
+  font-family: Inter;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   cursor: pointer;
   text-transform: capitalize;

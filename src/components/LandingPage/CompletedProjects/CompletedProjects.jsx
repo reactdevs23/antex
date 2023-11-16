@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import SectionTitle from "../../common/SectionTitle/SectionTitle";
-import LoadMore from "../../common/LoadMore/LoadMore";
+// import LoadMore from "../../common/LoadMore/LoadMore";
 import MenuContainer from "../../common/MenuContainer/MenuContainer";
 import Pagination from "../../common/Pagination/Pagination";
 import {
@@ -1384,17 +1384,16 @@ const CompletedProjects = () => {
               </div>
             </MenuContainer>
           </div>
-          <LoadMore />
+          {/* <LoadMore /> */}
+          <Pagination
+            // className="pagination-bar"
+            currentPage={currentPage}
+            totalCount={tableRows.length}
+            pageSize={itemsPerPage}
+            onPageChange={(page) => setCurrentPage(page)}
+            siblingCount={0}
+          />
         </div>
-
-        <Pagination
-          // className="pagination-bar"
-          currentPage={currentPage}
-          totalCount={tableRows.length}
-          pageSize={itemsPerPage}
-          onPageChange={(page) => setCurrentPage(page)}
-          siblingCount={0}
-        />
       </div>
     </div>
   );

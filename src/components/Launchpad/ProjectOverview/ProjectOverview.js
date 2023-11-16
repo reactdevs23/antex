@@ -6,6 +6,7 @@ import { IoMdClose } from "react-icons/io";
 import Sidebar from "./Sidebar/Sidebar";
 import { Element } from "react-scroll";
 import ProjectIntro from "./ProjectIntro/ProjectIntro";
+import { allocation } from "../../../images";
 
 const ProjectOverview = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -68,7 +69,7 @@ const ProjectOverview = () => {
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years old. Richard McClintock, a Latin professor
             at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure{" "}
+            obscure
           </p>
         </div>
         <div id="solution" className={styles.solution}>
@@ -110,6 +111,48 @@ const ProjectOverview = () => {
             at Hampden-Sydney College in Virginia, looked up one of the more
             obscure{" "}
           </p>
+
+          <img src={allocation} alt="#" className={styles.image} />
+        </div>
+        <div id="tokenomics" className={styles.tokenomics}>
+          <h4 className={styles.heading}>TOKENOMICS</h4>
+
+          <ul className={styles.list}>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+          </ul>
+
+          <ul className={styles.list}>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+            <li className={styles.text}>$2m raised in seen round 1</li>
+          </ul>
+        </div>
+        <div id="summery" className={styles.summery}>
+          <h4 className={styles.heading}>SUMMERY</h4>
+          <p className={styles.text}>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Contrary to popular belief, Lorem Ipsum is not simply random
+            text. It has roots in a piece of classical Latin literature from 45
+            BC, making it over 2000 years old. Richard McClintock, a Latin
+            professor at Hampden-Sydney College in Virginia, looked up one of
+            the more obscure{" "}
+          </p>
+        </div>
+        <div id="team" className={styles.team}>
+          <h4 className={styles.heading}>TEAM</h4>
+
+          <img src={allocation} alt="#" className={styles.image} />
         </div>
       </div>
     </div>

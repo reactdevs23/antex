@@ -7,50 +7,30 @@ const Faq = () => {
   const faqArray = [
     {
       question: "Why do I need to Stake my BST token?",
-      answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
+      list: true,
+      answer: [
+        "You need to stake yor token in order to participate in sales.",
+        "Staking your token qualifies you to vote on governance and incubation with a ratio of 1:1.",
+        "You earn rewards by locking your tokens.",
+        "You need to stake your token to qualify for a guaranteed allocation.",
+        "Staking your token is one of the criteria you need to qualify for airdrops in our ecosystem.",
+        "you need to stake your token in order to be qualify for private sales.",
+      ],
     },
     {
       question: "Do I need to unstake and restake for each IDO?",
       answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
+        "No! You are eligible to participate in IDOs as long as your token remain staked.",
     },
     {
       question: "How is wallet allocation calculated?",
       answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
+        "Wallet allocation is determined by dividing the each wallets percentage stake in the pool by the total numbers  of registered participants in the tier and multiplied by the pool weight.",
     },
     {
       question: "What happens when my lock duration is over?",
       answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-    },
-    {
-      question: "When is my locked token released?",
-      answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-    },
-    {
-      question: "Can I open more than one lock in a pool?",
-      answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-    },
-    {
-      question: "Can I stake in more than 1 pool?",
-      answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-    },
-    {
-      question:
-        "How do I claim the available reward in my staking  dashboard ?",
-      answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
-    },
-    {
-      question:
-        "How do I unstake my  $BST tokens in the HiDAO executive pool ?",
-      answer:
-        "In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.",
+        "When your lock duration expires,You stopped earning rewards but can still register for sales unless you unstake your token.",
     },
   ];
   return (
@@ -74,9 +54,23 @@ const Faq = () => {
             </div>
             {showAnswer === index && (
               <div className={styles.answerContainer}>
-                <p className={`${styles.answer} ${styles.question}`}>
-                  {items.answer}
-                </p>
+                {!items.list && (
+                  <p className={`${styles.answer} ${styles.question}`}>
+                    {items.answer}
+                  </p>
+                )}
+                {items.list && (
+                  <ul className={styles.list}>
+                    {items.answer.map((answer, i) => (
+                      <li
+                        className={`${styles.answer} ${styles.question}, `}
+                        key={i}
+                      >
+                        {answer}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             )}
           </div>

@@ -39,7 +39,7 @@
   line-height: 150.4%; /* 27.072px */
 }
 .iconContainer {
-  position: sticky;
+  position: absolute;
   top: 5px;
   background: #1dfe8e;
   width: 36px;
@@ -60,12 +60,27 @@
 
   text-align: center;
 }
+.image {
+  width: 100%;
+  margin-top: 18px;
+}
+.list {
+  display: block;
+  padding: 18px 0;
+  padding-left: 18px;
+}
+.team {
+  min-height: 500px;
+}
 @media only screen and (max-width: 991px) {
   .mainWrapper {
     grid-template-columns: 1fr;
   }
   .iconContainer {
     display: flex;
+  }
+  .mainWrapper {
+    padding-top: 20px;
   }
 }
 @media only screen and (max-width: 520px) {

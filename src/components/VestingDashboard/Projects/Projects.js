@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
 import MenuContainer from "../../../components/common/MenuContainer/MenuContainer";
-import LoadMore from "../../../components/common/LoadMore/LoadMore";
+// import LoadMore from "../../../components/common/LoadMore/LoadMore";
 import Pagination from "../../../components/common/Pagination/Pagination";
 import classes from "./Projects.module.css";
 import {
@@ -1219,9 +1219,8 @@ const Projects = () => {
           <div className={classes.networks}>
             {allNetworks.map((el, idx) => {
               return (
-                <div className={classes.networkWrapper}>
+                <div className={classes.networkWrapper} key={"network-" + idx}>
                   <div
-                    key={"network-" + idx}
                     className={clsx(
                       classes.networkContainer,
                       selectedNetwork.toLowerCase() ===
@@ -1269,17 +1268,16 @@ const Projects = () => {
               </div>
             </MenuContainer>
           </div>
-          <LoadMore />
+          {/* <LoadMore /> */}
+          <Pagination
+            // className="pagination-bar"
+            currentPage={currentPage}
+            totalCount={rawProjects.length}
+            pageSize={itemsPerPage}
+            onPageChange={(page) => setCurrentPage(page)}
+            siblingCount={0}
+          />
         </div>
-
-        <Pagination
-          // className="pagination-bar"
-          currentPage={currentPage}
-          totalCount={rawProjects.length}
-          pageSize={itemsPerPage}
-          onPageChange={(page) => setCurrentPage(page)}
-          siblingCount={0}
-        />
       </div>
     </div>
   );

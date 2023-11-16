@@ -29,10 +29,10 @@
 .tabs .tab {
   cursor: pointer;
   color: #fff;
-  font-family: Poppins;
-  font-size: 20px;
+  font-family: Inter;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   text-transform: capitalize;
   padding-bottom: 4px;

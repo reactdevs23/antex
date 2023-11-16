@@ -64,3 +64,27 @@
   padding: 4px;
   text-align: center;
 }
+/* Firefox */
+.gridTable {
+  scrollbar-width: thin;
+  scrollbar-color: #1ced86 rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+/* Chrome, Edge, and Safari */
+.gridTable::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+.gridTable::-webkit-scrollbar-track {
+  background: rgba(250, 250, 250, 0.2);
+  border-radius: 5px;
+}
+
+.gridTable::-webkit-scrollbar-thumb {
+  background: #1ced86;
+  border-radius: 100vh;
+  border: none;
+  border-radius: 5px;
+}

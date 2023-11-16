@@ -89,19 +89,37 @@
   }
 }
 
-.card1 .upcoming {
-  border: 1px solid #feffbb80;
-  background-color: #feffbb21;
+.card1 .upcoming,
+.live,
+.ended {
   height: 28px;
   padding: 0 6px;
   border-radius: 999px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #feffbb;
-  padding-right: 14px;
-}
 
+  padding-right: 14px;
+  text-align: center;
+}
+.live {
+  color: #56ea9d;
+
+  border: 1px solid rgba(86, 234, 157, 0.5);
+  background: rgba(86, 234, 157, 0.13);
+}
+.upcoming {
+  border: 1px solid #feffbb80;
+  background-color: #feffbb21;
+  color: #feffbb;
+}
+.ended {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+
+  background: rgba(255, 0, 0, 0.13);
+  color: #f00;
+}
 .card1 .approx {
   margin-top: 14px;
 }

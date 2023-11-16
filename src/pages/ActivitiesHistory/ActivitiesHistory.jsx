@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import ReactPaginate from "react-paginate";
-
 import Dropdown from "../../components/common/Dropdown/Dropdown";
 import DatePicker from "../../components/common/DatePicker/DatePicker";
 
 import classes from "./ActivitiesHistory.module.css";
 import MenuContainer from "../../components/common/MenuContainer/MenuContainer";
-import LoadMore from "../../components/common/LoadMore/LoadMore";
+import Pagination from "../../components/common/Pagination/Pagination";
+// import LoadMore from "../../components/common/LoadMore/LoadMore";
 import {
   arrowDropdown2,
   magnifier,
@@ -566,20 +565,15 @@ const ActivitiesHistory = () => {
                 </div>
               </MenuContainer>
             </div>
-            <LoadMore />
+            {/* <LoadMore /> */}
+            <Pagination
+              currentPage={currentPage}
+              totalCount={rawData.length}
+              pageSize={itemsPerPage}
+              onPageChange={(page) => setCurrentPage(page)}
+              siblingCount={0}
+            />
           </div>
-
-          <ReactPaginate
-            className="staking-table-pagination"
-            breakLabel="..."
-            nextLabel={<></>}
-            onPageChange={(event) => setCurrentPage(event.selected)}
-            pageRangeDisplayed={2}
-            pageCount={currentItems.length}
-            previousLabel={<></>}
-            renderOnZeroPageCount={null}
-            marginPagesDisplayed={2}
-          />
         </div>
       </div>
     </div>

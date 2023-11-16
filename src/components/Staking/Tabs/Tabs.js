@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { useDataContext } from "../../Context";
-import clsx from "clsx";
+
 import styles from "./Tabs.module.css";
 
 const Tabs = () => {

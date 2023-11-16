@@ -4,8 +4,14 @@ import classes from "./DataTable.module.css";
 
 const DataTable = ({ data }) => {
   return (
-    <div className={[classes.gridTableContainer, "overflow"].join(" ")}>
-      <div className={[classes.gridTable, classes.gridHeaderWrapper].join(" ")}>
+    <div className={[classes.gridTableContainer].join(" ")}>
+      <div
+        className={[
+          classes.gridTable,
+          classes.gridHeaderWrapper,
+          "overflow",
+        ].join(" ")}
+      >
         <div className={classes.gridHeader}>Position</div>
         <div className={classes.gridHeader}>Address</div>
         <div className={classes.gridHeader}>Amount staked</div>
@@ -13,10 +19,7 @@ const DataTable = ({ data }) => {
         <div className={classes.gridHeader}>Staking pool</div>
 
         {data.map((el, idx) => (
-          <React.Fragment
-            className={classes.gridTable}
-            key={"table-row-" + idx}
-          >
+          <React.Fragment key={"table-row-" + idx}>
             <div
               className={[classes.gridItem, classes.positionContainer].join(
                 " "

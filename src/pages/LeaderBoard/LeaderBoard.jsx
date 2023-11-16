@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
-import ReactPaginate from "react-paginate";
-
+// import ReactPaginate from "react-paginate";
+import Pagination from "../../components/common/Pagination/Pagination";
 import MenuContainer from "../../components/common/MenuContainer/MenuContainer";
-import LoadMore from "../../components/common/LoadMore/LoadMore";
-import classes from "./LeaderBoard.module.css";
+// import LoadMore from "../../components/common/LoadMore/LoadMore";
+
 import { arrowDropdown2, magnifier } from "../../images";
 import DataTable from "./DataTable/DataTable";
 import Tabs from "../../components/Staking/Tabs/Tabs";
+import classes from "./LeaderBoard.module.css";
 
 const LeaderBoard = () => {
   const [searchState, setSearchState] = useState("");
@@ -362,20 +363,15 @@ const LeaderBoard = () => {
                 </div>
               </MenuContainer>
             </div>
-            <LoadMore />
+            {/* <LoadMore /> */}{" "}
+            <Pagination
+              currentPage={currentPage}
+              totalCount={rawData.length}
+              pageSize={itemsPerPage}
+              onPageChange={(page) => setCurrentPage(page)}
+              siblingCount={0}
+            />
           </div>
-
-          <ReactPaginate
-            className="staking-table-pagination"
-            breakLabel="..."
-            nextLabel={<></>}
-            onPageChange={(event) => setCurrentPage(event.selected)}
-            pageRangeDisplayed={2}
-            pageCount={currentItems.length}
-            previousLabel={<></>}
-            renderOnZeroPageCount={null}
-            marginPagesDisplayed={2}
-          />
         </div>
       </div>
     </div>

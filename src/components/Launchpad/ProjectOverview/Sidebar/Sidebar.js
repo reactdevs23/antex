@@ -11,7 +11,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
     { item: "Value preposition", to: "valuepreposition" },
     { item: "Allocation and Distribution", to: "allocationanddistribution" },
     { item: "Tokenomics", to: "tokenomics" },
-    { item: "Summary", to: "summary" },
+    { item: "Summery", to: "summery" },
     { item: "Team", to: "team" },
   ];
   return (
@@ -33,7 +33,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
           smooth={true}
           offset={-10}
           duration={500}
-          activeStyle={{ color: "green" }}
+          activeStyle={{ color: "#1CED86" }}
           containerId="containerElement"
           onClick={() => setSidebar((prev) => !prev)}
         >

@@ -14,6 +14,8 @@ import {
   youtube,
   porjectImage,
   buyCoinInserter,
+  live,
+  ended,
 } from "../../../images";
 import ProgressBar from "../../common/Progressbar/Progressbar";
 import { useState } from "react";
@@ -61,6 +63,12 @@ const Hero = () => {
                 </div>
               </div>
               <div className={classes.cardRight}>
+                {/* <div className={classes.live}>
+                  <img src={live} alt="live" /> Live
+                </div> 
+                <div className={classes.ended}>
+                  <img src={ended} alt="ended" /> Ended
+                </div> */}
                 <div className={classes.upcoming}>
                   <img src={upcoming} alt="upcoming" /> Upcoming
                 </div>

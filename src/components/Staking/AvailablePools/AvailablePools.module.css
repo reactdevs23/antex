@@ -1,5 +1,5 @@
 .stakings .stakingItem {
-  border-radius: 16px;
+  border-radius: 10px;
   background: linear-gradient(
       0deg,
       rgba(36, 43, 51, 0.8) 0%,
@@ -9,8 +9,12 @@
   padding: 12px 30px;
   margin-bottom: 20px;
 }
-
-.stakings .stakingItem .stakingTitle {
+@media only screen and (max-width: 520px) {
+  .stakings .stakingItem {
+    padding: 12px 18px;
+  }
+}
+.stakingTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,12 +28,29 @@
   line-height: normal;
   text-transform: capitalize;
 }
-
+.show {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 22px;
+  cursor: pointer;
+  min-width: 22px;
+  display: none;
+}
 @media screen and (max-width: 640px) {
-  .stakings .stakingItem .stakingTitle {
+  .stakingTitle {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: flex-start;
+  }
+  .show {
+    display: block;
+    justify-self: end;
+    justify-items: flex-end;
   }
 }
 
@@ -55,7 +76,7 @@
 @media screen and (max-width: 1199px) {
   .stakings .stakingItemContent {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     flex-wrap: wrap;
   }
@@ -272,7 +293,6 @@
 }
 @media only screen and (max-width: 1199px) {
   .stakings .stakingItemContent .proceed {
-    margin-left: auto;
   }
 }
 @media only screen and (max-width: 520px) {

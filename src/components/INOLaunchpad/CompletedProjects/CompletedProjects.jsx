@@ -4,13 +4,93 @@ import { useEffect, useMemo, useState } from "react";
 import SectionTitle from "../../common/SectionTitle/SectionTitle";
 
 import Dropdown from "../../common/Dropdown/Dropdown";
-import LoadMore from "../../common/LoadMore/LoadMore";
+// import LoadMore from "../../common/LoadMore/LoadMore";
 import MenuContainer from "../../common/MenuContainer/MenuContainer";
 import Pagination from "../../common/Pagination/Pagination";
 import { arrowDropdown2, magnifier, tableProjectItem } from "../../../images";
 import classes from "./CompletedProjects.module.css";
 
 const data = [
+  {
+    icon: tableProjectItem,
+    name: "AHinox Ecosystem unique",
+    hit: true,
+    participants: 1000000,
+    access: "Private",
+    idoPrice: 1,
+    currentPrice: 2,
+    ath: 3,
+    athIDORoi: 17.46,
+    athIDORoiGreen: "(+17056.5%)",
+    hinox: 2000000,
+    leadVcIcon: tableProjectItem,
+    leadVc: "Binance",
+    salesDate: "11 April 2022",
+  },
+  {
+    icon: tableProjectItem,
+    name: "BHinox Ecosystem",
+    hit: true,
+    participants: 1000001,
+    access: "Private",
+    idoPrice: 4,
+    currentPrice: 5,
+    ath: 6,
+    athIDORoi: 18.46,
+    athIDORoiGreen: "(+17056.5%)",
+    hinox: 2000001,
+    leadVcIcon: tableProjectItem,
+    leadVc: "Binance",
+    salesDate: "10 April 2022",
+  },
+  {
+    icon: tableProjectItem,
+    name: "CHinox Ecosystem",
+    hit: true,
+    participants: 1000002,
+    access: "Public",
+    idoPrice: 7,
+    currentPrice: 8,
+    ath: 9,
+    athIDORoi: 19.46,
+    athIDORoiGreen: "(+17056.5%)",
+    hinox: 2000002,
+    leadVcIcon: tableProjectItem,
+    leadVc: "Binance",
+    salesDate: "9 April 2022",
+  },
+  {
+    icon: tableProjectItem,
+    name: "DHinox Ecosystem",
+    hit: true,
+    participants: 1000003,
+    access: "Private",
+    idoPrice: 10,
+    currentPrice: 11,
+    ath: 12,
+    athIDORoi: 20.46,
+    athIDORoiGreen: "(+17056.5%)",
+    hinox: 2000003,
+    leadVcIcon: tableProjectItem,
+    leadVc: "Binance",
+    salesDate: "7 April 2022",
+  },
+  {
+    icon: tableProjectItem,
+    name: "EHinox Ecosystem",
+    hit: true,
+    participants: 1000004,
+    access: "DAO Incubated",
+    idoPrice: 13,
+    currentPrice: 14,
+    ath: 15,
+    athIDORoi: 21.46,
+    athIDORoiGreen: "(+17056.5%)",
+    hinox: 2000004,
+    leadVcIcon: tableProjectItem,
+    leadVc: "Binance",
+    salesDate: "8 April 2022",
+  },
   {
     icon: tableProjectItem,
     name: "AHinox Ecosystem unique",
@@ -303,17 +383,16 @@ const CompletedProjects = () => {
               </div>
             </MenuContainer>
           </div>
-          <LoadMore />
+          {/* <LoadMore /> */}
+          <Pagination
+            // className="pagination-bar"
+            currentPage={currentPage}
+            totalCount={data.length}
+            pageSize={itemsPerPage}
+            onPageChange={(page) => setCurrentPage(page)}
+            siblingCount={0}
+          />
         </div>
-
-        <Pagination
-          // className="pagination-bar"
-          currentPage={currentPage}
-          totalCount={data.length}
-          pageSize={itemsPerPage}
-          onPageChange={(page) => setCurrentPage(page)}
-          siblingCount={0}
-        />
       </div>
     </div>
   );
