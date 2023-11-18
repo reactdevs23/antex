@@ -124,7 +124,7 @@ const LockedUnlock = ({ setModal }) => {
   ];
   return (
     <>
-      <div className={classes.overlay} />
+      <div className={classes.overlay} onClick={() => setModal(false)} />
       <div className={classes.myWrapper}>
         <div className={classes.row1}>
           <div className={classes.percent}>

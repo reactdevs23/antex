@@ -286,8 +286,9 @@ const Navbar = () => {
   const {
     walletConnected,
     vestingForTWallet,
+
     setShowWalletNotConnectedModal,
-    setShowNoVestingForThisWallet,
+    setShowNoVestingForThisWalletModal,
   } = useDataContext();
   const [isMenuActive, setIsMenuActive] = useState(false);
 
@@ -296,7 +297,7 @@ const Navbar = () => {
   const handleConnectButton = () => {
     if (!walletConnected) setShowWalletNotConnectedModal(true);
     else if (walletConnected && !vestingForTWallet) {
-      setShowNoVestingForThisWallet(true);
+      setShowNoVestingForThisWalletModal(true);
     }
   };
 

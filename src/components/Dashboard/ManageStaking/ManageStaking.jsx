@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SectionTitle from "../../common/SectionTitle/SectionTitle";
 import LockedUnlock from "../../Popups/LockedUnlock/LokedUnlock";
 import classes from "./ManageStaking.module.css";
@@ -43,6 +43,15 @@ const ManageStaking = () => {
       bg: "#ACFADF",
     },
   ];
+  useEffect(() => {
+    // Set body overflow based on the modal visibility
+    document.body.style.overflow = modal ? "hidden" : "auto";
+
+    // Cleanup function to reset body overflow when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modal]);
   return (
     <div id="manage">
       <div className={classes.title}>

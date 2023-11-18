@@ -7,7 +7,7 @@ export const ContextProvider = ({ children }) => {
   const [showWalletNotConnectedModal, setShowWalletNotConnectedModal] =
     useState(false);
   const [vestingForTWallet, setVestingForWallet] = useState(false);
-  const [showNoVestingForThisWallet, setShowNoVestingForThisWallet] =
+  const [showNoVestingForThisWalletModal, setShowNoVestingForThisWalletModal] =
     useState(false);
   const [showBuyBstModal, setShowBuyBstModal] = useState(false);
 
@@ -25,8 +25,8 @@ export const ContextProvider = ({ children }) => {
         setShowWalletNotConnectedModal,
         vestingForTWallet,
         setVestingForWallet,
-        showNoVestingForThisWallet,
-        setShowNoVestingForThisWallet,
+        showNoVestingForThisWalletModal,
+        setShowNoVestingForThisWalletModal,
         numberFormator,
         showBuyBstModal,
         setShowBuyBstModal,

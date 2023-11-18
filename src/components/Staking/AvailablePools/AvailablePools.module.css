@@ -28,7 +28,7 @@
   line-height: normal;
   text-transform: capitalize;
 }
-.show {
+.showArrow {
   color: rgba(255, 255, 255, 0.5);
   font-size: 22px;
   cursor: pointer;
@@ -47,7 +47,7 @@
 
     align-items: flex-start;
   }
-  .show {
+  .showArrow {
     display: block;
     justify-self: end;
     justify-items: flex-end;
@@ -99,6 +99,10 @@
 
   .stakings .stakingItemContent .stakingNumbers {
     justify-content: space-between;
+    display: none;
+  }
+  .stakings .stakingItemContent .showBox {
+    display: flex;
   }
 }
 

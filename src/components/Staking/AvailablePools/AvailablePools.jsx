@@ -98,7 +98,7 @@ const AvailablePools = () => {
       bg: "#E8FFCE",
     },
   ];
-  const [showBox, setShowBox] = useState(false);
+  const [showBox, setShowBox] = useState(null);
   const [showProceidingCompoenent, setShowProcedingComponent] = useState(null);
 
   return (

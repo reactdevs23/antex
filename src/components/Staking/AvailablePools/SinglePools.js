@@ -26,7 +26,7 @@ const SinglePools = ({
     }
   };
   return (
-    <div key={i}>
+    <div>
       <div className={classes.stakingItem}>
         <div className={classes.header}>
           <span className={classes.arrow}></span>
@@ -35,15 +35,15 @@ const SinglePools = ({
 
             <h4>Access:{pools.access}</h4>
           </div>
-          {showBox ? (
+          {showBox === i ? (
             <IoIosArrowUp
-              className={classes.show}
-              onClick={() => setShowBox((prev) => !prev)}
+              className={classes.showArrow}
+              onClick={() => setShowBox(i)}
             />
           ) : (
             <IoIosArrowDown
-              className={classes.show}
-              onClick={() => setShowBox((prev) => !prev)}
+              className={classes.showArrow}
+              onClick={() => setShowBox(i)}
             />
           )}
         </div>
@@ -54,48 +54,51 @@ const SinglePools = ({
             <div className={classes.subText}>APY</div>
             <div className={classes.tag}>{pools.numberOfTimes}</div>
           </div>
-          {showBox && (
-            <div className={classes.stakingNumbers}>
-              <div>
-                <div className={classes.label}>Duration</div>
-                <div className={classes.value}>{pools.duration}</div>
-              </div>
-              <div>
-                <div className={classes.label}>locked until</div>
-                <div className={classes.value}>{pools.lockedUntil}</div>
-              </div>
-              <div>
-                <div className={classes.label}>Earning Rate</div>
-                <div className={classes.value}>{pools.earningRate} daily</div>
-              </div>
-              <div>
-                <div className={classes.label}>Min.Stake</div>
-                <div className={classes.value}>{pools.minStake}</div>
-              </div>
-              <div>
-                <div className={classes.label}>Staking Cap</div>
-                <div className={classes.value}>{pools.stakingCap}</div>
-              </div>
-              <div>
-                <div className={classes.label}>Pool Allocation</div>
-                <div className={classes.value}>{pools.poolAlocation}</div>
-              </div>
-              <div>
-                <p className={clsx(classes.label, classes.statusLabel)}>
-                  Status
-                </p>
-                <div
-                  className={clsx(
-                    classes.status,
-                    pools.status.toLowerCase() === "active" && classes.active,
-                    pools.status.toLowerCase() === "closed" && classes.closed
-                  )}
-                >
-                  <div className={classes.statusDot}></div> {pools.status}
-                </div>
+
+          <div
+            className={[
+              classes.stakingNumbers,
+              showBox === i && classes.showBox,
+            ].join(" ")}
+          >
+            <div>
+              <div className={classes.label}>Duration</div>
+              <div className={classes.value}>{pools.duration}</div>
+            </div>
+            <div>
+              <div className={classes.label}>locked until</div>
+              <div className={classes.value}>{pools.lockedUntil}</div>
+            </div>
+            <div>
+              <div className={classes.label}>Earning Rate</div>
+              <div className={classes.value}>{pools.earningRate} daily</div>
+            </div>
+            <div>
+              <div className={classes.label}>Min.Stake</div>
+              <div className={classes.value}>{pools.minStake}</div>
+            </div>
+            <div>
+              <div className={classes.label}>Staking Cap</div>
+              <div className={classes.value}>{pools.stakingCap}</div>
+            </div>
+            <div>
+              <div className={classes.label}>Pool Allocation</div>
+              <div className={classes.value}>{pools.poolAlocation}</div>
+            </div>
+            <div>
+              <p className={clsx(classes.label, classes.statusLabel)}>Status</p>
+              <div
+                className={clsx(
+                  classes.status,
+                  pools.status.toLowerCase() === "active" && classes.active,
+                  pools.status.toLowerCase() === "closed" && classes.closed
+                )}
+              >
+                <div className={classes.statusDot}></div> {pools.status}
               </div>
             </div>
-          )}
+          </div>
+
           <div
             className={classes.proceed}
             onClick={() => handleShowProcedingComponent(i)}

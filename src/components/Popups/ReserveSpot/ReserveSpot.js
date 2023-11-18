@@ -17,7 +17,10 @@ const ReserveSpot = ({ setReserveSpot, setShowReserveSpotModal }) => {
   };
   return (
     <>
-      <div className={classes.overlay} />
+      <div
+        className={classes.overlay}
+        onClick={() => setShowReserveSpotModal(false)}
+      />
       <div className={[classes.reserveSpot, "overflow"].join(" ")}>
         <div className={classes.main}>
           {" "}

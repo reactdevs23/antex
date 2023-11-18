@@ -26,7 +26,10 @@ const WalletNotConnected = () => {
           <button className={styles.button}>Connect Wallet</button>
         </div>
       </div>
-      <div className={styles.overlay}></div>
+      <div
+        className={styles.overlay}
+        onClick={() => setShowWalletNotConnectedModal(false)}
+      ></div>
     </>
   );
 };

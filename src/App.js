@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import BuyBstModal from "./components/Popups/BuyBstModal/BuyBstModal";
 import Navbar from "./components/Navbar/Navbar";
@@ -22,9 +23,27 @@ function App() {
     showBuyBstModal,
     walletConnected,
     vestingForThisWallet,
-    showNoVestingForThisWallet,
+    showNoVestingForThisWalletModal,
     showWalletNotConnectedModal,
   } = useDataContext();
+  useEffect(() => {
+    // Set body overflow based on the modal visibility
+    document.body.style.overflow =
+      showWalletNotConnectedModal ||
+      showNoVestingForThisWalletModal ||
+      showBuyBstModal
+        ? "hidden"
+        : "auto";
+
+    // Cleanup function to reset body overflow when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [
+    showWalletNotConnectedModal,
+    showNoVestingForThisWalletModal,
+    showBuyBstModal,
+  ]);
   return (
     <>
       <Navbar />
@@ -47,7 +66,7 @@ function App() {
       {!walletConnected && showWalletNotConnectedModal && (
         <WalletNotConnected />
       )}
-      {!vestingForThisWallet && showNoVestingForThisWallet && (
+      {!vestingForThisWallet && showNoVestingForThisWalletModal && (
         <NoVestingForThisWallet />
       )}
     </>

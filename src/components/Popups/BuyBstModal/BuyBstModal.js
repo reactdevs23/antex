@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdOutlineClose } from "react-icons/md";
 
 import styles from "./BuyBstModal.module.css";
@@ -50,7 +50,10 @@ const BuyBstModal = () => {
           </div>
         </div>
       </div>
-      <div className={styles.overlay}></div>
+      <div
+        className={styles.overlay}
+        onClick={() => setShowBuyBstModal(false)}
+      ></div>
     </>
   );
 };

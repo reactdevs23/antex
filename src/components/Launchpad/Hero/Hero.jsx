@@ -1,5 +1,4 @@
-import classes from "./Hero.module.css";
-
+import { useEffect } from "react";
 import clsx from "clsx";
 import TrueFalse from "../../common/TrueFalse/TrueFalse";
 import ReserveSpot from "../../../components/Popups/ReserveSpot/ReserveSpot";
@@ -24,7 +23,7 @@ import { handleKeyDown } from "../../utils";
 import MyCountDown from "../../common/CountDown/CountDown";
 import WaitingForConfirmation from "../../Popups/RegisterHinox/WaitingForConfirmation/WaitingForConfirmation";
 import RegistrationCompletedModal from "../../Popups/RegisterHinox/RegistrationCompletedModal/RegistrationCompletedModal";
-
+import classes from "./Hero.module.css";
 const time = new Date();
 time.setSeconds(time.getSeconds() + 60 * 60 * 25 + 60 * 60);
 
@@ -47,6 +46,25 @@ const Hero = () => {
   const [salesStarted, setSalesStarted] = useState(false);
   const [amount, setAmount] = useState("");
 
+  useEffect(() => {
+    // Set body overflow based on the modal visibility
+    document.body.style.overflow =
+      startRegistrationModal ||
+      waitingModalForConfirmationModal ||
+      registrationCompletedModal ||
+      showReserveSpotModal
+        ? "hidden"
+        : "auto";
+    // Cleanup function to reset body overflow when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [
+    startRegistrationModal,
+    waitingModalForConfirmationModal,
+    registrationCompletedModal,
+    showReserveSpotModal,
+  ]);
   return (
     <>
       <div className={[classes.hero, "mainWrapper"].join(" ")}>

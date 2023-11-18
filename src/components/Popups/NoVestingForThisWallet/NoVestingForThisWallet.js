@@ -22,7 +22,10 @@ const NoVestingForThisWallet = () => {
           <h3 className={styles.title}>No vesting for this wallet</h3>
         </div>
       </div>
-      <div className={styles.overlay}></div>
+      <div
+        className={styles.overlay}
+        onClick={() => setShowNoVestingForThisWallet(false)}
+      ></div>
     </>
   );
 };
